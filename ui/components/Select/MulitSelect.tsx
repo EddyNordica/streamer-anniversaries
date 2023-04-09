@@ -1,6 +1,9 @@
 import React from "react";
 import { Listbox } from "@headlessui/react";
 import { SelectContent } from "./SelectContent";
+import { Translations } from "@/data/locales";
+import { useTranslation } from "next-i18next";
+import { isNonEmptyString } from "@/utils/string";
 
 export interface SelectItem<T> {
   id: string;
@@ -15,7 +18,11 @@ export interface MultiSelectProps<T> {
   defaultItemIds?: string[];
 }
 
+const NoSelectionSymbol = "_";
+
 export const MultiSelect = <T,>(props: MultiSelectProps<T>) => {
+  const { t } = useTranslation();
+
   if (props.items.length === 0) {
     throw new Error("No items were specified for Select.");
   }
@@ -26,6 +33,14 @@ export const MultiSelect = <T,>(props: MultiSelectProps<T>) => {
       (item) => props.defaultItemIds != null && item.id in props.defaultItemIds
     )
   );
+
+  const buttonText = selectedItems
+    .sort(
+      (a: SelectItem<T>, b: SelectItem<T>) =>
+        props.items.indexOf(a) - props.items.indexOf(b)
+    )
+    .map((item) => item.text)
+    .join(", ");
 
   return (
     <Listbox
@@ -40,15 +55,12 @@ export const MultiSelect = <T,>(props: MultiSelectProps<T>) => {
         <>
           <SelectContent
             label={props.label}
-            buttonText={
-              selectedItems
-                .sort(
-                  (a: SelectItem<T>, b: SelectItem<T>) =>
-                    props.items.indexOf(a) - props.items.indexOf(b)
-                )
-                .map((item) => item.text)
-                .join(", ") || "_"
+            buttonLabel={
+              isNonEmptyString(buttonText)
+                ? undefined
+                : t(Translations.noSelection) ?? undefined
             }
+            buttonText={buttonText || NoSelectionSymbol}
             items={props.items}
             open={open}
           />

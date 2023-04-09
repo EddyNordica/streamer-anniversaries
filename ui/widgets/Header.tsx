@@ -9,7 +9,12 @@ import {
   LocaleDropdownMenuItem,
 } from "@/ui/widgets/LocaleDropdown";
 import { PageContainer } from "@/ui/layout/PageContainer";
-import { Locales, Languages, Translations } from "@/data/locales";
+import {
+  Locales,
+  Languages,
+  Translations,
+  SupportedLocales,
+} from "@/data/locales";
 
 const languageOptions: LocaleDropdownMenuItem[] = Locales.map((locale) => ({
   id: locale,
@@ -73,10 +78,12 @@ export const Header = () => {
                   </div>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                  <LocaleDropdown
-                    title={i18n.language?.toUpperCase()}
-                    items={languageOptions}
-                  />
+                  {i18n.language != null && (
+                    <LocaleDropdown
+                      selectedLocale={i18n.language as SupportedLocales}
+                      items={languageOptions}
+                    />
+                  )}
                 </div>
                 <div className="-mr-2 flex items-center sm:hidden">
                   {/* Mobile menu button */}

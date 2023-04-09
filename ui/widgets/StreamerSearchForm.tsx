@@ -35,7 +35,7 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
     () =>
       Regions.map((region) => ({
         id: region,
-        text: t(getRegionName(region)),
+        text: `[${region.toUpperCase()}] ${t(getRegionName(region))}`,
         value: region,
       })),
     [t]

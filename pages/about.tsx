@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps } from "next/types";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import { Translations } from "@/data/locales";
 import { isNonEmptyString } from "@/utils/string";
 
@@ -20,35 +20,25 @@ export default function About() {
             {t(Translations.aboutThisSite)}
           </h2>
           <p className="text-base leading-7 text-gray-700 mb-4">
-            {t(Translations.aboutThisSiteTextOne)}
+            <Trans
+              i18nKey={Translations.aboutThisSiteTextOne}
+              components={{
+                a: (
+                  <a
+                    href="https://twitter.com/ShizuRin23/status/1644241090093133824"
+                    className="font-semibold text-indigo-600 hover:text-indigo-500"
+                    target="_blank"
+                  />
+                ),
+              }}
+            />
           </p>
-          <blockquote className="twitter-tweet">
-            <p lang="ja" dir="ltr">
-              どなたか！！！
-              <br />
-              にじさんじの○○の誕生日まであと○日！
-              <br />
-              とかお祝いごととか記念日までの
-              <br />
-              カウントダウン把握してるサイトとかのURLどこでしたっけ…！！！
-            </p>
-            &mdash; 静凛💜 (@ShizuRin23){" "}
-            <a href="https://twitter.com/ShizuRin23/status/1644241090093133824?ref_src=twsrc%5Etfw">
-              April 7, 2023
-            </a>
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charSet="utf-8"
-          ></script>
           <p className="text-base leading-7 text-gray-700 mb-4">
             {t(Translations.aboutThisSiteTextTwo)}
           </p>
           <p className="text-base leading-7 text-gray-700 mb-4">
             {t(Translations.aboutThisSiteTextThree)}
           </p>
-
           <ul role="list">
             <li>
               <span>{t(Translations.builtBy)}: </span>

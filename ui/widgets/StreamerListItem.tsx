@@ -7,6 +7,7 @@ import { convertToLocaleShortDate } from "@/lib/date";
 import { getRegionName } from "@/lib/streamers";
 
 export interface StreamerListItemProps {
+  id: string;
   name: string;
   imageUrl: string;
   date: string | null;
@@ -31,6 +32,8 @@ const StreamerCard = (props: StreamerListItemProps) => {
   const { t } = useTranslation();
   const [src, setSrc] = React.useState(`/images/streamers/${props.imageUrl}`);
 
+  const dateText = useDateText(props.date, props.id);
+
   return (
     <div className="flex flex-1 flex-col p-8 relative">
       <Image
@@ -43,6 +46,7 @@ const StreamerCard = (props: StreamerListItemProps) => {
       />
       <div className="mt-6 text-sm text-gray-900 font-medium">{props.name}</div>
       <dl className="mt-1 flex flex-grow flex-col justify-between">
+        {/* Number of Days to Anniversary */}
         {props.days != null && (
           <>
             <dt className="sr-only">{t(Translations.numberOfDays)}</dt>
@@ -58,6 +62,8 @@ const StreamerCard = (props: StreamerListItemProps) => {
             </dd>
           </>
         )}
+
+        {/* Anniversary Age */}
         {props.age != null && (
           <>
             <dt className="sr-only">{t(Translations.anniversaryAge)}</dt>
@@ -69,24 +75,26 @@ const StreamerCard = (props: StreamerListItemProps) => {
             </dd>
           </>
         )}
+
+        {/* Anniversary Date */}
         <dt className="sr-only">{t(Translations.date)}</dt>
-        <dd className="text-sm text-gray-500">
-          {props.date != null
-            ? convertToLocaleShortDate(props.date)
-            : t(Translations.unknown)}
-        </dd>
+        <dd className="text-sm text-gray-500">{dateText}</dd>
+
+        {/* Agency */}
         <dt className="sr-only">{t(Translations.agency)}</dt>
         <dd className="mt-3">
           <span className="rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-800">
             {t(props.agency)}
           </span>
         </dd>
+
+        {/* Region */}
         <div className="absolute top-0 right-3">
           <dt className="sr-only">{t(Translations.region)}</dt>
           <dd className="mt-3">
             <span
               title={t(getRegionName(props.region)) ?? undefined}
-              className="rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-800"
+              className="rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-800 cursor-default"
             >
               {t(props.region).toUpperCase()}
             </span>
@@ -95,4 +103,18 @@ const StreamerCard = (props: StreamerListItemProps) => {
       </dl>
     </div>
   );
+};
+
+const useDateText = (dateString: string | null, id: string): string => {
+  const { t } = useTranslation();
+
+  if (dateString != null) {
+    return convertToLocaleShortDate(dateString);
+  }
+
+  if (id === "fumino-tamaki") {
+    return t(Translations.everyday);
+  } else {
+    return t(Translations.unknown);
+  }
 };

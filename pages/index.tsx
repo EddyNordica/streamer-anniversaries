@@ -114,6 +114,7 @@ const StreamerListRenderer = (props: StreamerListRenderer) => {
             return (
               <StreamerListItem
                 key={streamer.id}
+                id={streamer.id}
                 name={streamer.name[i18n.language as SupportedLocales]}
                 imageUrl={streamer.imageUrl}
                 date={streamer.anniversaries[props.anniversary]}

@@ -54,6 +54,7 @@ export enum Translations {
   anniversaryAgeUnit = "anniversaryAgeUnit",
   daysUnit = "daysUnit",
   numberOfResults = "numberOfResults",
+  noSelection = "noSelection",
   aboutThisSite = "aboutThisSite",
   terms = "terms",
   privacyPolicy = "privacyPolicy",
@@ -64,4 +65,5 @@ export enum Translations {
   aboutThisSiteTextThree = "aboutThisSiteTextThree",
   termsText = "termsText",
   privacyPolicyText = "privacyPolicyText",
+  everyday = "everyday",
 }
