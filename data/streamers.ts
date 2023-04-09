@@ -375,7 +375,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "sonny-brisko",
-    name: { ja: "ニー・ブリスコー", en: "Sonny Brisko" },
+    name: { ja: "サニー・ブリスコー", en: "Sonny Brisko" },
     anniversaries: { birthday: "04/06", debut: "2022/02/27" },
     agency: "nijisanji",
     region: "en",
