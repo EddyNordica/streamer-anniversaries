@@ -1,0 +1,39 @@
+{
+  "name": "streamer-anniversaries",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.17",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.3.0",
+    "i18next": "^22.4.14",
+    "next": "13.3.0",
+    "next-i18next": "^13.2.2",
+    "postcss": "8.4.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.2.0",
+    "tailwindcss": "3.3.1",
+    "typescript": "5.0.3",
+    "use-debounce": "^9.0.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "ts-essentials": "^9.3.1"
+  }
+}
