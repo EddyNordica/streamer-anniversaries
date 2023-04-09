@@ -20,7 +20,8 @@ export const Select = <T,>(props: SelectProps<T>) => {
     throw new Error("No items were specified for Select.");
   }
 
-  const [selectedItem, setSelectedItem] = React.useState<SelectItem<T>>(
+  const [selectedItem, setSelectedItem] = useSelectedItem(
+    props.items,
     props.items.find((item) => item.id === props.defaultItemId) ??
       props.items[0]
   );
@@ -43,4 +44,24 @@ export const Select = <T,>(props: SelectProps<T>) => {
       )}
     </Listbox>
   );
+};
+
+const useSelectedItem = <T,>(
+  items: SelectItem<T>[],
+  initialValue: SelectItem<T>
+): [SelectItem<T>, (item: SelectItem<T>) => void] => {
+  const [selectedItem, setSelectedItem] =
+    React.useState<SelectItem<T>>(initialValue);
+
+  // This hook needs to re-run when the items change because they can also
+  // change when the locale was updated.
+  const selectedItemId = selectedItem.id;
+  React.useEffect(() => {
+    const newItem = items.find((item) => item.id === selectedItemId);
+    if (newItem != null) {
+      setSelectedItem(newItem);
+    }
+  }, [items, selectedItemId]);
+
+  return [selectedItem, setSelectedItem];
 };

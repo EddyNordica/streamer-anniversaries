@@ -20,7 +20,8 @@ export const MultiSelect = <T,>(props: MultiSelectProps<T>) => {
     throw new Error("No items were specified for Select.");
   }
 
-  const [selectedItems, setSelectedItems] = React.useState<SelectItem<T>[]>(
+  const [selectedItems, setSelectedItems] = useSelectedItems(
+    props.items,
     props.items.filter(
       (item) => props.defaultItemIds != null && item.id in props.defaultItemIds
     )
@@ -55,4 +56,33 @@ export const MultiSelect = <T,>(props: MultiSelectProps<T>) => {
       )}
     </Listbox>
   );
+};
+
+const useSelectedItems = <T,>(
+  items: SelectItem<T>[],
+  initialValues: SelectItem<T>[]
+): [SelectItem<T>[], (items: SelectItem<T>[]) => void] => {
+  const [selectedItems, setSelectedItems] =
+    React.useState<SelectItem<T>[]>(initialValues);
+
+  // This hook needs to re-run when the items change because they can also
+  // change when the locale was updated.
+  const selectedItemIds = selectedItems.map((item) => item.id);
+  React.useEffect(() => {
+    const newItems: SelectItem<T>[] = [];
+    for (const item of items) {
+      if (selectedItemIds.findIndex((itemId) => itemId === item.id) >= 0) {
+        newItems.push(item);
+      }
+    }
+
+    setSelectedItems(newItems);
+
+    // For the dependency, use the array of IDs rather than passing the selected
+    // items because that would cause an infinite loop. This hook should only
+    // run when the items and the selected items change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [items, selectedItemIds.join()]);
+
+  return [selectedItems, setSelectedItems];
 };
