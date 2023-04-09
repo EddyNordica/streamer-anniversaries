@@ -148,24 +148,24 @@ export const filterStreamers = (
     return streamers;
   }
 
-  return streamers.filter((streamer) => {
-    if (isNonEmptyString(searchQuery)) {
+  let filtered: DeepReadonly<Streamer[]> = [...streamers];
+
+  if (isNonEmptyString(searchQuery)) {
+    filtered = filtered.filter((streamer) => {
       const names = Object.values(streamer.name);
       for (const name of names) {
         if (name.toLowerCase().includes(searchQuery.toLowerCase())) {
           return true;
         }
       }
-    }
+    });
+  }
 
-    if (
-      regions != null &&
-      regions.length > 0 &&
-      regions?.indexOf(streamer.region) >= 0
-    ) {
-      return true;
-    }
+  if (regions != null && regions.length > 0) {
+    filtered = filtered.filter(
+      (streamer) => regions.indexOf(streamer.region) >= 0
+    );
+  }
 
-    return false;
-  });
+  return filtered;
 };
