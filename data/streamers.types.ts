@@ -40,6 +40,21 @@ export interface HasAnniversaries {
 export const Agency = ["nijisanji", "hololive", "independent"];
 export type StreamerAgency = (typeof Agency)[number];
 
+/**
+ * The status fo a streamer.
+ *
+ * `active` - The streamer is active, and is officially part of an agency (if
+ * the streamer is part of one). Those who are on hiatus are also included
+ * in this category as long as they are expected to come back. For example,
+ * 語部紡 is considered active because she never officially left Nijisanji.
+ *
+ * `ended` - The streamer who has decided to end the streaming career as
+ * the current person/character. Usually, this means the person has graduated.
+ * This does not include those who were forcibly terminated.
+ */
+export const Status = ["active", "ended"];
+export type StreamerStatus = (typeof Status)[number];
+
 export const Social = [
   "bilibili",
   "instagram",
@@ -60,6 +75,7 @@ interface BaseStreamer extends HasAnniversaries {
   id: string;
   imageUrl: string;
   agency: StreamerAgency;
+  status: StreamerStatus;
   links: Partial<Record<StreamerSocial, `https://${string}`>>;
 }
 

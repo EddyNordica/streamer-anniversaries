@@ -9,6 +9,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KaburakiRoco.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UClrQ7xhRBxS_v_-WuudGKmA",
       twitter: "https://twitter.com/65_kaburaki",
@@ -21,6 +22,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KuramochiMeruto.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCiA-trSZfB0i92V_-dyDqBw",
       twitter: "https://twitter.com/k_meruto",
@@ -33,6 +35,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ShishidoAkari.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCWRPqA0ehhWV4Hnp27PJCkQ",
       twitter: "https://twitter.com/44do_akari",
@@ -45,6 +48,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "IgarashiRika.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCu-rV2gPtJ-CsGxe71z_BrQ",
       twitter: "https://twitter.com/1garashi_Rika",
@@ -57,6 +61,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "IshigamiNozomi.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCtLfA_qUqCJtjXJM2ZR_keg",
       twitter: "https://twitter.com/I_Nozomi_",
@@ -69,6 +74,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KoshimizuToru.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCUP8TmlO7NNra88AMqGU_vQ",
       twitter: "https://twitter.com/toru_2434",
@@ -81,6 +87,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SophiaValentine.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCivwPlOp0ojnMPZj5pNOPPA",
       twitter: "https://twitter.com/SophiaV214",
@@ -93,6 +100,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "DoppioDropscythe.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCy91xBlY_Brh3bnHxKtjrrg",
       twitter: "https://twitter.com/D_Dropscythe",
@@ -105,6 +113,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "HexHaywire.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCz_ZRw6ak4Foy8zZy0kEprQ",
       twitter: "https://twitter.com/HexHaywire",
@@ -117,6 +126,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "KotokaTorahime.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCggO2c1unS-oLwTLT0ICywg",
       tiktok: "https://www.tiktok.com/@kotokatorahime",
@@ -129,6 +139,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "MelocoKyoran.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UChKXd7oqD18qiIYBoRIHTlw",
       twitch: "https://www.twitch.tv/melocokyoran",
@@ -142,6 +153,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "VerVermillion.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCO8WcDsF5znr-qsXlzZNpqg",
       twitch: "https://www.twitch.tv/Ver_Vermillion",
@@ -155,6 +167,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "AiaAmare.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCN68LoM3khS4gdBMiWJO8WA",
       twitter: "https://twitter.com/AiaAmare",
@@ -167,6 +180,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "AsterArcadia.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCpzxZW5kghGnO5TmAFJQAVw",
       twitch: "https://www.twitch.tv/AsterArcadia",
@@ -180,6 +194,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "KyoKaneko.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCsb-1aJgiJXJH2feV-zlZRw",
       twitch: "https://www.twitch.tv/KyoKanek0",
@@ -193,6 +208,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "MariaMarionette.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCwaS8_S7kMiKA3izlTWHbQg",
       twitch: "https://www.twitch.tv/mariamarionette",
@@ -206,6 +222,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "RenZotto.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCKu59gTZ_rdEmerdx5rV4Yg",
       twitter: "https://twitter.com/RenZott0",
@@ -218,6 +235,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "ScarleYonaguni.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCFgXWZOUZA2oYHNr6qDmsTQ",
       twitch: "https://www.twitch.tv/scarleyonaguni",
@@ -231,6 +249,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "FuraKanato.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCC7rRD6P7RQcx0hKv9RQP4w",
       twitter: "https://twitter.com/KNTFR2434",
@@ -243,6 +262,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SeraphDazzlegarden.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC5dJFf4m-mEcoyJRfhBljoA",
       twitter: "https://twitter.com/SerAph_DazZ",
@@ -255,6 +275,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ShikinagiAkira.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCcDDxnoQcezyTUzHg5uHaKg",
       twitter: "https://twitter.com/Shikinagi_2434",
@@ -267,6 +288,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "WataraiHibari.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC4l9gz3q65lTBFfFtW5LLeA",
       twitter: "https://twitter.com/watarai_hibari",
@@ -279,6 +301,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HyakumantenbaraSalome.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCgIfLpQvelloDi8I0Ycbwpg",
       twitter: "https://twitter.com/1000000lome",
@@ -291,6 +314,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AmagaseMuyu.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCAQDFeCTVdx90GtwohwjHzQ",
       twitter: "https://twitter.com/Muyu_Amagase",
@@ -303,6 +327,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "PontoNei.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCe22Bcwd_GCpTjLxn83zl7A",
       twitter: "https://twitter.com/ponto_nei",
@@ -315,6 +340,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "UmiseYotsuha.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCtHY-tP0dyykhTRMmnfPs_g",
       twitter: "https://twitter.com/Yotsuha_Umise",
@@ -327,6 +353,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "AlbanKnox.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCQ1zGxHrfEmmW4CPpBx9-qw",
       twitch: "https://www.twitch.tv/albanknox",
@@ -340,6 +367,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "FulgurOvid.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCGhqxhovNfaPBpxfCruy9EA",
       twitter: "https://twitter.com/Fulgur_Ovid",
@@ -352,6 +380,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "SonnyBrisko.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCuuAb_72QzK0M1USPMEl1yw",
       twitter: "https://twitter.com/sonny_brisko",
@@ -364,6 +393,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "UkiVioleta.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UChJ5FTsHOu72_5OVx0rvsvQ",
       twitter: "https://twitter.com/uki_violeta",
@@ -376,6 +406,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "YugoAsuma.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCSc_KzY_9WYAx9LghggjVRA",
       twitter: "https://twitter.com/Yugo_Asuma",
@@ -388,6 +419,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Girimi.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/1484169431",
       weibo: "https://weibo.com/5821242750",
@@ -400,6 +432,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Karisa.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608714",
       weibo: "https://weibo.com/u/7716153446",
@@ -412,6 +445,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Kiyuu.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/1155425566",
       twitter: "https://twitter.com/KiyuuVR",
@@ -425,6 +459,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Sybil.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/1405589619" },
   },
   {
@@ -434,6 +469,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "IkeEveland.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC4yNIKGvy-YUrwYupVdLDXA",
       twitter: "https://twitter.com/ike_eveland",
@@ -446,6 +482,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "LucaKaneshiro.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC7Gb7Uawe20QyFibhLl1lzA",
       twitch: "https://www.twitch.tv/LucaKaneshiro",
@@ -460,6 +497,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "MystaRias.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCIM92Ok_spNKLVB5TsgwseQ",
       twitch: "https://www.twitch.tv/mystarias",
@@ -474,6 +512,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "ShuYamino.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCG0rzBZV_QMP4MtWg6IjhEA",
       twitter: "https://twitter.com/shu_yamino",
@@ -486,6 +525,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "VoxAkuma.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCckdfYDGrjojJM28n5SHYrA",
       twitter: "https://twitter.com/Vox_Akuma",
@@ -498,6 +538,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "MillieParfait.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC47rNmkDcNgbOcM-2BwzJTQ",
       twitch: "https://www.twitch.tv/millieparfait",
@@ -512,6 +553,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "NinaKosaka.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCkieJGn3pgJikVW8gmMXE2w",
       twitch: "https://www.twitch.tv/NinaKosaka",
@@ -527,6 +569,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "EnnaAlouette.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCR6qhsLpn62WVxCBK1dkLow",
       twitch: "https://www.twitch.tv/ennaalouette",
@@ -542,6 +585,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "ReimuEndou.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCBURM8S4LH7cRZ0Clea9RDA",
       twitch: "https://www.twitch.tv/reimuendou",
@@ -557,6 +601,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Hunger.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608710" },
   },
   {
@@ -566,6 +611,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Keke.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608711",
       weibo: "https://weibo.com/u/7715059574",
@@ -578,6 +624,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Yog.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608709",
       weibo: "https://weibo.com/u/7718174355",
@@ -590,6 +637,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Uka.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608712",
       weibo: "https://weibo.com/u/7707599747",
@@ -602,6 +650,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "HaYun.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCrhhJPNsOqzNIkUfTABoSpg",
       twitch: "https://www.twitch.tv/hayun2434",
@@ -615,6 +664,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "KoYami.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UC9oudjCTHL2BfwxfDwI18eg",
       twitch: "https://www.twitch.tv/koyami2434",
@@ -628,6 +678,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "LeeOn.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCCJcCWrbQzz6eDhX4M1CUwg",
       twitch: "https://www.twitch.tv/leeon2434",
@@ -641,6 +692,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "NaSera.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCX88Pe54pxbJDSGIyGrzNdg",
       twitch: "https://www.twitch.tv/nasera2434",
@@ -654,6 +706,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "HyonaElatiora.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCIBj1-d71vKjRftiauF50pg",
       twitter: "https://twitter.com/HyonaElatiora",
@@ -666,6 +719,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "MikaMelatika.webp",
+    status: "active",
     links: {
       youtube: "https://youtube.com/channel/UCahgMxSIQ2zIRrPKhM6Mjvg",
       twitch: "https://www.twitch.tv/mikamelatika",
@@ -679,6 +733,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "XiaEkavira.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCoJ0Ct-jdas4cLPpSp06gZg",
       twitter: "https://twitter.com/Xia_Ekavira",
@@ -691,6 +746,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Yomiya.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608689" },
   },
   {
@@ -700,6 +756,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Hakuja.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608695" },
   },
   {
@@ -709,6 +766,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Koxia.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608690",
       twitter: "https://twitter.com/Koxia548",
@@ -722,6 +780,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Miyu.webp",
+    status: "ended",
     links: { bilibili: "https://space.bilibili.com/690608692" },
   },
   {
@@ -731,6 +790,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Rhea.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608698" },
   },
   {
@@ -740,6 +800,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AxiaKrone.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UC8oPnditPSp5lZu45fnXWCA",
       twitter: "https://twitter.com/AXIA_96NE",
@@ -752,6 +813,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "LainPaterson.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCRm6lqtdxs_Qo6HeL-SRQ-w",
       twitter: "https://twitter.com/Lain_Paterson",
@@ -764,6 +826,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "LaurenIroas.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCgmFrRcyH7d1zR9sIVQhFow",
       twitter: "https://twitter.com/Lauren_iroas",
@@ -776,6 +839,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "LeosVincent.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC-6rZgmxZSIbq786j3RD5ow",
       twitter: "https://twitter.com/Leos_Vincent",
@@ -788,6 +852,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "OliverEvans.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCqjTqdVlvIipZXIKeCkHKUA",
       twitter: "https://twitter.com/oliverD_23",
@@ -800,6 +865,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "PetraGurin.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCgA2jKRkqpY_8eysPUs8sjw",
       twitch: "https://www.twitch.tv/petragurin",
@@ -813,6 +879,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "RosemiLovelock.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC4WvIIAo89_AzGUh1AZ6Dkg",
       twitch: "https://www.twitch.tv/rosemilovelock",
@@ -826,6 +893,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "SelenTatsuki.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCV1xUwfM2v2oBtT3JNvic3w",
       twitch: "https://www.twitch.tv/selentatsuki",
@@ -839,6 +907,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "EliraPendora.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCIeSUTOTkF9Hs7q3SGcO-Ow",
       twitch: "https://www.twitch.tv/elirapendora",
@@ -852,6 +921,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "FinanaRyugu.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCu-J8uIXuLZh16gG-cT1naw",
       twitch: "https://www.twitch.tv/finanaryugu",
@@ -865,6 +935,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "en",
     imageUrl: "PomuRainpuff.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCP4nMSTdwU1KqYWu3UH5DHQ",
       twitch: "https://www.twitch.tv/pomurainpuff",
@@ -878,6 +949,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Kiti.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608688" },
   },
   {
@@ -887,6 +959,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Qilou.webp",
+    status: "ended",
     links: { bilibili: "https://space.bilibili.com/690608696" },
   },
   {
@@ -896,6 +969,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Tocci.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608704" },
   },
   {
@@ -905,6 +979,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "BanHada.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCLjx3lqIkYkPCBJop8czJ2A",
       twitch: "https://www.twitch.tv/banhada2434",
@@ -918,6 +993,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "Seffyna.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCeGendL8CO5RkffB6IFwHow",
       twitch: "https://www.twitch.tv/seffyna2434",
@@ -931,6 +1007,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "SongMia.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCyqzU2nq7eGNi4kN0uHx7TA",
       twitch: "https://www.twitch.tv/songmia2434",
@@ -944,6 +1021,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Mayumi.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608693" },
   },
   {
@@ -953,6 +1031,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Tsukumo.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608702" },
   },
   {
@@ -962,6 +1041,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Kendou.webp",
+    status: "ended",
     links: {
       bilibili: "https://space.bilibili.com/690608701",
       youtube: "https://www.youtube.com/channel/UCtMOawR6IrUlhlDVuR3poCQ",
@@ -975,6 +1055,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Chiyuu.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608691",
       weibo: "https://weibo.com/u/7649836455",
@@ -987,6 +1068,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Imi.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608694",
       twitter: "https://twitter.com/Imi_VirtuaReal",
@@ -999,6 +1081,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Mari.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608686",
       twitter: "https://twitter.com/mari75996916",
@@ -1012,6 +1095,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Tanoshiba.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/690608706" },
   },
   {
@@ -1021,6 +1105,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "DeremKado.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCMzVa7B8UEdrvUGsPmSgyjA",
       twitter: "https://twitter.com/DeremKado",
@@ -1033,6 +1118,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "NagisaArcinia.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCijNnZ-6m8g85UGaRAWuw7g",
       twitter: "https://twitter.com/NagisaArcinia",
@@ -1045,6 +1131,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "RezaAvanluna.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC5yckZliCkuaEFbqzLBD7hQ",
       twitter: "https://twitter.com/RezaAvanluna",
@@ -1057,6 +1144,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "OhJiyu.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCnzZmBOSrQf2wDBbnsDajVw",
       twitch: "https://www.twitch.tv/JiyuOh2434",
@@ -1070,6 +1158,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "RyuHari.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UClS6k3w1sPwlVFqK3-yID5A",
       twitch: "https://www.twitch.tv/hariryu2434",
@@ -1083,6 +1172,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "ShinKiru.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCi6nV5Z2dzFuXBzLG3P9zqQ",
       twitch: "https://www.twitch.tv/kirushin2434",
@@ -1096,6 +1186,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "YangNari.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCCHH0nWYXFZmtDS_4tvMxHQ",
       twitch: "https://www.twitch.tv/nariyang2434",
@@ -1109,6 +1200,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Reve.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/666726802",
       weibo: "https://weibo.com/u/7529947924",
@@ -1121,6 +1213,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Shaun.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/666726801/video",
       youtube: "https://www.youtube.com/channel/UC8vZcu6W-EJ6UYEy_C31c-A",
@@ -1135,6 +1228,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Sirius.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/666726800" },
   },
   {
@@ -1144,6 +1238,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Yua.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/666726799",
       twitter: "https://twitter.com/yyyy2114",
@@ -1157,6 +1252,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Nyatsuki.webp",
+    status: "ended",
     links: {
       bilibili: "https://space.bilibili.com/472821519",
       twitter: "https://twitter.com/Nyatsuki4",
@@ -1169,6 +1265,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Plus.webp",
+    status: "ended",
     links: {
       bilibili: "https://space.bilibili.com/472845978",
       youtube: "https://www.youtube.com/channel/UCGeHzMJF8hlfewoLNgrvIlg",
@@ -1182,6 +1279,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Waku.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/472877684",
       twitter: "https://twitter.com/wakuhime1",
@@ -1194,6 +1292,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AsahinaAkane.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCe_p3YEuYJb8Np0Ip9dk-FQ",
       twitter: "https://twitter.com/akane_asahina__",
@@ -1207,6 +1306,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "NishizonoChigusa.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCkngxfPbmGyGl_RIq4FA3MQ",
       twitter: "https://twitter.com/Chigusa_24zono",
@@ -1219,6 +1319,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "TodoKohaku.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCebT4Aq-3XWb5je1S1FvR_A",
       twitter: "https://twitter.com/kohaku_todo",
@@ -1231,6 +1332,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "BonnivierPranaja.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCHjeZylSgXDSnor8wUnwU_g",
       twitter: "https://twitter.com/bobon_pranaja",
@@ -1243,6 +1345,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KitakojiHisui.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCRqBKoKuX30ruKAq05pCeRQ",
       twitter: "https://twitter.com/Hisui_Kitakoji",
@@ -1255,6 +1358,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SuoSango.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCL_O_HXgLJx3Auteer0n0pA",
       twitter: "https://twitter.com/Suo_Sango",
@@ -1267,6 +1371,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "EtnaCrimson.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCjFu-9GHnabzSFRAYm1B9Dw",
       twitter: "https://twitter.com/Etna_Crimson",
@@ -1279,6 +1384,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "SiskaLeontyne.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC5qSx7KzdRwbsO1QmJc4d-w",
       twitch: "https://www.twitch.tv/siskaleontyne",
@@ -1293,6 +1399,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "AkiraRay.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC7hffDQLKIEG-_zoAQkMIvg",
       twitch: "https://www.twitch.tv/rayakira2434",
@@ -1306,6 +1413,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "LeeRoha.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCClwIqTUn5LDpFucHyaAhHg",
       twitch: "https://www.twitch.tv/rohalee2434",
@@ -1319,6 +1427,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "NunBora.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UC1ZV7KBscK0EMoJKFu1DnDg",
       twitch: "https://www.twitch.tv/boranun2434",
@@ -1332,6 +1441,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Kiyora.webp",
+    status: "ended",
     links: {
       bilibili: "https://space.bilibili.com/558070436",
       weibo: "https://weibo.com/u/7479439894",
@@ -1344,6 +1454,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Chaos.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/628292881",
       weibo: "https://weibo.com/u/7516809141",
@@ -1356,21 +1467,10 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Chiharu.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/558070433",
       weibo: "https://weibo.com/u/7391961059",
-    },
-  },
-  {
-    id: "kingyozaka-meiro",
-    name: { ja: "金魚坂めいろ", en: "Kingyozaka Meiro" },
-    anniversaries: { birthday: "03/31", debut: "2020/07/11" },
-    agency: "nijisanji",
-    region: "jp",
-    imageUrl: "KingyozakaMeiro.webp",
-    links: {
-      youtube: "https://www.youtube.com/channel/UC69URn8iP4u8D_zUp-IJ1sg",
-      twitter: "https://twitter.com/meiro_oO",
     },
   },
   {
@@ -1380,22 +1480,10 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SorahoshiKirame.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC_82HBGtvwN1hcGeOGHzUBQ",
       twitter: "https://twitter.com/kirame_2434",
-    },
-  },
-  {
-    id: "chae-ara",
-    name: { ja: "チェ・アラ", en: "Chae Ara", kr: "채아라" },
-    anniversaries: { birthday: "09/09", debut: "2020/05/22" },
-    agency: "nijisanji",
-    region: "kr",
-    imageUrl: "ChaeAra.webp",
-    links: {
-      youtube: "https://www.youtube.com/channel/UCmWqYB6y8gSfPONWGspuOWQ",
-      twitch: "https://www.twitch.tv/arachae2434",
-      twitter: "https://twitter.com/AraChae2434",
     },
   },
   {
@@ -1405,6 +1493,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "LeeSiu.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCSlv7Z-4q7_7NRkzJB10A5Q",
       twitch: "https://www.twitch.tv/siulee2434",
@@ -1418,6 +1507,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "SoNagi.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC5ek2GWKvUKFgnKSHuuCFrw",
       twitch: "https://www.twitch.tv/nagiso2434",
@@ -1431,6 +1521,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Pax.jpg",
+    status: "ended",
     links: { bilibili: "https://space.bilibili.com/370688671" },
   },
   {
@@ -1440,6 +1531,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Shiki.webp",
+    status: "ended",
     links: { bilibili: "https://space.bilibili.com/370687372" },
   },
   {
@@ -1449,6 +1541,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Samael.webp",
+    status: "ended",
     links: {
       bilibili: "https://space.bilibili.com/370689210",
       weibo: "https://weibo.com/u/7574327606",
@@ -1461,6 +1554,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Karu.webp",
+    status: "ended",
     links: {
       bilibili: "https://space.bilibili.com/370687588",
       twitter: "https://twitter.com/virtuarealkaru",
@@ -1474,6 +1568,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "GenzukiTojiro.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCGw7lrT-rVZCWHfdG9Frcgg",
       twitter: "https://twitter.com/1O46V",
@@ -1486,6 +1581,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KaidaHaru.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCo2N7C-Z91waaR6lF3LL_jw",
       twitter: "https://twitter.com/Kaida_Haru",
@@ -1498,6 +1594,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "NagaoKei.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCXW4MqCQn-jCaxlX-nn-BYg",
       twitter: "https://twitter.com/kei_nagao2434",
@@ -1510,6 +1607,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "AzuraCecillia.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCk5r533QVMgJUdWwqegH2TA",
       twitter: "https://twitter.com/Azura_Cecillia",
@@ -1522,6 +1620,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "NaraHaramaung.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCoWH3sDpeXG1aXmOxveX4KA",
       twitter: "https://twitter.com/Nara_Haramaung",
@@ -1534,6 +1633,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "Gaon.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCpRXCTyNNa-MnjhK6gisnRw",
       twitch: "https://www.twitch.tv/gaon_2434",
@@ -1547,6 +1647,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "LaylaAlstroemeria.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCyRkQSuhJILuGOuXk10voPg",
       twitch: "https://www.twitch.tv/laylaalstroemeria",
@@ -1560,6 +1661,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "FurenELustario.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw",
       twitter: "https://twitter.com/furen_2434",
@@ -1572,6 +1674,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Ibrahim.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCmZ1Rbthn-6Jm_qOGjYsh5A",
       twitter: "https://twitter.com/honmono_ibrahim",
@@ -1584,6 +1687,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MelissaKinrenka.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCwcyyxn6h9ex4sMXGtpQE_g",
       twitter: "https://twitter.com/melissa_2434",
@@ -1596,6 +1700,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "MinSuha.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCUtKkGKef8BYMs3h-3zQm9A",
       twitch: "https://www.twitch.tv/suha2434",
@@ -1609,6 +1714,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "in",
     imageUrl: "Aadya.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UC_aB_-PHLFHiP61djM0oOiQ",
       twitter: "https://twitter.com/Aadya_VTuber",
@@ -1622,6 +1728,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "in",
     imageUrl: "Noor.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UC6oW4FXETgEGOFTxWmI2h5Q",
       twitter: "https://twitter.com/Noor_VTuber",
@@ -1635,6 +1742,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "ShinYuya.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCjGE11ZnF0JSR8egVAwh-3A",
       twitch: "https://www.twitch.tv/yuyashin2434",
@@ -1648,6 +1756,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "in",
     imageUrl: "Vihaan.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UC0lik9pHju6ONgkBh7N5wHw",
       twitter: "https://twitter.com/Vihaan_VTuber",
@@ -1661,6 +1770,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "Wiffy.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCzMAP-oh5-pC8j6RlCPf26w",
       twitch: "https://www.twitch.tv/wiffy2434",
@@ -1674,6 +1784,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "YuRuri.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCIJ9zP6gIkT8BB4Lz4UYPhA",
       twitch: "https://www.twitch.tv/ruriyu2434",
@@ -1687,6 +1798,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Saya.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/490331391",
       youtube: "https://www.youtube.com/channel/UC2NtHPaDUA5htYsjVrO8Gng",
@@ -1700,6 +1812,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Seiya.webp",
+    status: "ended",
     links: { bilibili: "https://space.bilibili.com/319810877" },
   },
   {
@@ -1709,6 +1822,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Yukie.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/56748733",
       weibo: "https://weibo.com/u/7518758711",
@@ -1721,6 +1835,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KurusuNatsume.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCRcLAVTbmx2-iNcXSsupdNA",
       twitter: "https://twitter.com/kurusu72me",
@@ -1733,6 +1848,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MashiroMeme.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCS-XXTgVkotkbkDnGEprXpg",
       twitter: "https://twitter.com/mashiro2434",
@@ -1745,6 +1861,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Naraka.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC-o-E6I3IC2q8sAoAuM6Umg",
       twitter: "https://twitter.com/Naraka_2434",
@@ -1757,6 +1874,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "AmiciaMichella.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCrR7JxkbeLY82e8gsj_I0pQ",
       twitch: "https://www.twitch.tv/amiciamichella",
@@ -1770,6 +1888,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "MiyuOttavia.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCOmjciHZ8Au3iKMElKXCF_g",
       twitter: "https://twitter.com/MiyuOttavia",
@@ -1782,6 +1901,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "RaiGalilei.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC8Snw5i4eOJXEQqURAK17hQ",
       twitter: "https://twitter.com/Rai_Galilei",
@@ -1794,6 +1914,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "RiksaDhirendra.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCkL9OLKjIQbKk2CztbpOCFg",
       twitter: "https://twitter.com/RiksaDhirendra",
@@ -1806,6 +1927,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Aza.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/480680646",
       twitter: "https://twitter.com/Aza_VirtuaReal",
@@ -1819,6 +1941,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Roi.webp",
+    status: "ended",
     links: {
       bilibili: "https://space.bilibili.com/480745939",
       weibo: "https://weibo.com/u/7362186125",
@@ -1831,6 +1954,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Tabibito.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/474369808",
       twitter: "https://twitter.com/VRduelTabibito",
@@ -1843,6 +1967,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Yagi.webp",
+    status: "active",
     links: { bilibili: "https://space.bilibili.com/480675481" },
   },
   {
@@ -1852,6 +1977,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "FuwaMinato.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC6wvdADTJ88OfIbJYIpAaDA",
       twitter: "https://twitter.com/Fuwa_Minato",
@@ -1864,6 +1990,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "GweluOsGar.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC1QgXt46-GEvtNjEC1paHnw",
       twitter: "https://twitter.com/Gwelu_os_gar",
@@ -1876,6 +2003,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ShirayukiTomoe.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCuvk5PilcvDECU7dDZhQiEw",
       twitter: "https://twitter.com/Tomoe_Shirayuki",
@@ -1888,6 +2016,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "Hakuren.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UC6WU2SrnG019ucm_bdY6qxQ",
       twitch: "https://www.twitch.tv/hakuren_vtuber",
@@ -1901,6 +2030,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "HanChiho.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCJ6LH4jMNy0JN9RSThz1mMQ",
       twitch: "https://www.twitch.tv/chihorahao",
@@ -1914,6 +2044,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Hoshimi.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/477342747",
       twitter: "https://twitter.com/Hoshimi515",
@@ -1927,6 +2058,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Mahiru.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/477306079",
       twitter: "https://twitter.com/KaguraMahiru",
@@ -1939,6 +2071,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Miki.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/477342747",
       twitter: "https://twitter.com/supermikimiki2",
@@ -1952,6 +2085,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "EmmaAugust.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCl1oLKcAq93p-pwKfDGhiYQ",
       twitter: "https://twitter.com/emma_august_",
@@ -1964,6 +2098,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "LuisCammy.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCb6ObE-XGCctO3WrjRZC-cw",
       twitter: "https://twitter.com/Luis_Cammy",
@@ -1976,6 +2111,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MatsukaiMao.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCerkculBD7YLc_vOGrF7tKg",
       twitter: "https://twitter.com/matsukai_mao",
@@ -1988,6 +2124,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Hanon.webp",
+    status: "ended",
     links: { bilibili: "https://space.bilibili.com/455965041" },
   },
   {
@@ -1997,6 +2134,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "Lorou.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCLSzgV37Dt24T8p3-TNiSLg",
       twitch: "https://www.twitch.tv/lorou",
@@ -2010,6 +2148,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Fumi.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCwrjITPwG4q71HzihV2C7Nw",
       twitter: "https://twitter.com/FumiVirtual",
@@ -2022,6 +2161,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HoshikawaSara.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC9V3Y3_uzU5e-usObb6IE1w",
       twitter: "https://twitter.com/Sara_Hoshikawa",
@@ -2035,6 +2175,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YamagamiKaruta.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCllKI7VjyANuS1RXatizfLQ",
       twitter: "https://twitter.com/karuta_Yamagami",
@@ -2047,6 +2188,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HayaseSou.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC2OacIzd2UxGHRGhdHl1Rhw",
       twitter: "https://twitter.com/SouHayase",
@@ -2060,6 +2202,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ShellinBurgundy.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCHBhnG2G-qN0JrrWmMO2FTA",
       twitter: "https://twitter.com/ShellinBurgundy",
@@ -2072,6 +2215,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SukoyaKana.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC8C1LLhBhf_E2IBPLSDJXlQ",
       twitter: "https://twitter.com/sukosuko_sukoya",
@@ -2084,6 +2228,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "HanaMacchia.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCpJtk0myFr5WnyfsmnInP-w",
       twitch: "https://www.twitch.tv/hanamacchia",
@@ -2097,6 +2242,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "TakaRadjiman.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCZ5dNZsqBjBzbBl0l_IdmXg",
       twitch: "https://www.twitch.tv/taka_2434",
@@ -2110,6 +2256,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "id",
     imageUrl: "ZEACornelia.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCA3WE2WRSpoIvtnoVGq4VAw",
       twitter: "https://twitter.com/ZEA_Cornelia",
@@ -2122,6 +2269,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Muri.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/455916618",
       twitter: "https://twitter.com/MURI_wrrry",
@@ -2135,6 +2283,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AmamiyaKokoro.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCkIimWZ9gBJRamKF0rmPU8w",
       twitter: "https://twitter.com/amamiya_kokoro",
@@ -2147,6 +2296,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "EliConifer.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCpNH2Zk2gw3JBjWAKSyZcQQ",
       twitter: "https://twitter.com/Eli_Conifer",
@@ -2159,6 +2309,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "RatnaPetit.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCIG9rDtgR45VCZmYnd-4DUw",
       twitter: "https://twitter.com/ratna_petit",
@@ -2171,6 +2322,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AibaUiha.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCnRQYHTnRLSF0cLJwMnedCg",
       twitter: "https://twitter.com/AibaUiha",
@@ -2184,6 +2336,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ArsAlmal.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCdpUojq0KWZCN9bxXnZwz5w",
       twitter: "https://twitter.com/ars_almal",
@@ -2196,6 +2349,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MayuzumiKai.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCb5JxV6vKlYVknoJB8TnyYg",
       twitter: "https://twitter.com/mayuzumi_X",
@@ -2208,6 +2362,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HakaseFuyuki.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCGYAYLDE7TZiiC8U6teciDQ",
       twitter: "https://twitter.com/hakase_fuyuki",
@@ -2220,6 +2375,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KagamiHayato.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCmovZ2th3Sqpd00F5RdeigQ",
       twitter: "https://twitter.com/H_KAGAMI2434",
@@ -2232,6 +2388,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YorumiRena.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCL34fAoFim9oHLbVzMKFavQ",
       twitter: "https://twitter.com/rena_yorumi",
@@ -2244,6 +2401,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HayamaMarin.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCfipDDn7wY-C-SoUChgxCQQ",
       twitter: "https://twitter.com/Hayama_Marin",
@@ -2256,19 +2414,11 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "NuiSociere.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCUc8GZfFxtmk7ZwSO7ccQ0g",
       twitter: "https://twitter.com/Nui_Sociere",
     },
-  },
-  {
-    id: "ichigo",
-    name: { ja: "イチゴ", en: "Ichigo", cn: "一果" },
-    anniversaries: { birthday: null, debut: "2019/06/18" },
-    agency: "nijisanji",
-    region: "cn",
-    imageUrl: "Ichigo.webp",
-    links: { bilibili: "https://space.bilibili.com/434341786" },
   },
   {
     id: "kouichi",
@@ -2277,6 +2427,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Kouichi.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/434401868",
       weibo: "https://weibo.com/midonekouichi",
@@ -2289,6 +2440,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Nanami.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/434334701",
       twitter: "https://twitter.com/NanamiVr",
@@ -2302,6 +2454,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ExAlbio.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCIytNcoz4pWzXfLda0DoULQ",
       twitter: "https://twitter.com/ex_albio",
@@ -2314,6 +2467,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "LeviElipha.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCtnO2N4kPTXmyvedjGWdx3Q",
       twitter: "https://twitter.com/Levi_E_2434",
@@ -2326,6 +2480,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Ruki.webp",
+    status: "ended",
     links: {},
   },
   {
@@ -2335,6 +2490,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Eine.webp",
+    status: "active",
     links: { twitter: "https://twitter.com/VirtuaRealEine" },
   },
   {
@@ -2344,6 +2500,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "Kaen.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCZgRRTDMYwHpQ7sCl0aCp2Q",
       twitch: "https://www.twitch.tv/kaen32165",
@@ -2357,6 +2514,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SuzuharaLulu.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w",
       twitter: "https://twitter.com/lulu_suzuhara",
@@ -2369,6 +2527,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YukishiroMahiro.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCHX7YpFG8rVwhsHCx34xt7w",
       twitter: "https://twitter.com/MahiroYukishiro",
@@ -2381,6 +2540,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AizonoManami.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC0WwEfE-jOM2rzjpdfhTzZA",
       twitter: "https://twitter.com/manami_aizono",
@@ -2393,6 +2553,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SaegusaAkina.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCNW1Ex0r6HsWRD4LCtPwvoQ",
       twitter: "https://twitter.com/333akina",
@@ -2405,6 +2566,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AngeKatrina.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCHVXbQzkl3rDfsXWo8xi2qw",
       twitter: "https://twitter.com/ange_katrina_",
@@ -2417,6 +2579,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "InuiToko.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCXRlIK3Cw_TJIQC5kSJJQMg",
       twitter: "https://twitter.com/inui_toko",
@@ -2429,6 +2592,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "LizeHelesta.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCZ1xuCK1kNmn5RzPYIZop3w",
       twitter: "https://twitter.com/Lize_Helesta",
@@ -2441,6 +2605,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "OtogibaraEra.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCwQ9Uv-m8xkE5PzRc7Bqx3Q",
       twitter: "https://twitter.com/OtogibaraEra",
@@ -2453,6 +2618,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KataribeTsumugu.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCufQu4q65z63IgE4cfKs1BQ",
       twitter: "https://twitter.com/KataribeTsumugu",
@@ -2465,6 +2631,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "OnomachiHaruka.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCg63a3lk6PNeWhVvMRM_mrQ",
       twitter: "https://twitter.com/onomachi_haruka",
@@ -2477,6 +2644,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SetoMiyako.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCHK5wkevfaGrPr7j3g56Jmw",
       twitter: "https://twitter.com/seto_miyako",
@@ -2489,6 +2657,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "GundoMirei.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCeShTCVgZyq2lsBW9QwIJcw",
       twitter: "https://twitter.com/g9v9g_mirei",
@@ -2501,6 +2670,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YuzukiRoa.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCCVwhI5trmaSxfcze_Ovzfw",
       twitter: "https://twitter.com/yuzuki_roa",
@@ -2513,6 +2683,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KudoChitose.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCP2o-o6u4uX3uq1hXspl0rg",
       twitter: "https://twitter.com/kudou_chitose",
@@ -2525,6 +2696,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "WarabedaMeiji.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCveZ9Ic1VtcXbsyaBgxPMvg",
       twitter: "https://twitter.com/warabeda_meiji",
@@ -2537,6 +2709,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "kr",
     imageUrl: "Moarin.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCrhf6HYKnV6bxyaB6ooJzbw",
       twitch: "https://www.twitch.tv/sol_0510",
@@ -2550,6 +2723,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KuroiShiba.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCmeyo5pRj_6PXG-CsGUuWWg",
       twitter: "https://twitter.com/BlackShiba_chan",
@@ -2562,6 +2736,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YumeoiKakeru.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCTIE7LM5X15NVugV7Krp9Hw",
       twitter: "https://twitter.com/kakeru_yumeoi",
@@ -2574,6 +2749,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "BelmondBanderas.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCbc8fwhdUNlqi-J99ISYu4A",
       twitter: "https://twitter.com/belmond_b_2434",
@@ -2588,6 +2764,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "JoeRikiichi.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UChUJbHiTVeGrSkTdBzVfNCQ",
       twitter: "https://twitter.com/joerikiichi",
@@ -2601,6 +2778,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MachitaChima.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCo7TRj3cS-f_1D9ZDmuTsjw",
       twitter: "https://twitter.com/chima_machita23",
@@ -2613,6 +2791,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AchikitaChinami.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCuz0vzQgC8LRdS6lVV0UkUg",
       twitter: "https://twitter.com/ac1kt",
@@ -2625,6 +2804,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "DebidebiDebiru.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCjlmCrq4TP1I4xguOtJ-31w",
       twitter: "https://twitter.com/debidebiru_sama",
@@ -2637,6 +2817,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "RindouMikoto.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCPvGypSgfDkVe7JG2KygK7A",
       twitter: "https://twitter.com/RindouMikoto",
@@ -2649,6 +2830,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SakuraRitsuki.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCfQVs_KuXeNAlGa3fb8rlnQ",
       twitter: "https://twitter.com/SAKURA_RITSUKI",
@@ -2661,6 +2843,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "TsukimiShizuku.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCqQV8xEBWd5SVZBLlYrS_5Q",
       twitter: "https://twitter.com/tukimi_sizuku",
@@ -2673,6 +2856,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AmemoriSayo.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCRWOdwLRsenx2jLaiCAIU4A",
       twitter: "https://twitter.com/Sayo_Amemori",
@@ -2685,6 +2869,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AsukaHina.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCiSRx1a2k-0tOg-fs6gAolQ",
       twitter: "https://twitter.com/hina__asuka",
@@ -2697,6 +2882,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MaimotoKeisuke.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCJubINhCcFXlsBwnHp0wl_g",
       twitter: "https://twitter.com/maimoto_k",
@@ -2709,6 +2895,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KandaShoichi.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCWz0CSYCxf4MhRKPDm220AQ",
       twitter: "https://twitter.com/Kanda_Shoichi",
@@ -2721,6 +2908,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "TakamiyaRion.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCV5ZZlLjk5MKGg3L0n0vbzw",
       twitter: "https://twitter.com/TakamiyaRion",
@@ -2733,6 +2921,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Setsuna.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCfM_A7lE6LkGrzx6_mOtI4g",
       twitter: "https://twitter.com/setsuna2434",
@@ -2745,6 +2934,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MakainoRirimu.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC9EjSJ8pvxtvPdxLOElv73w",
       twitter: "https://twitter.com/makaino_ririmu",
@@ -2757,6 +2947,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ShiinaYuika.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC_4tXjqecqox5Uc05ncxpxg",
       twitter: "https://twitter.com/yuika_siina",
@@ -2769,6 +2960,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YamiyonoMoruru.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCNUgrFCo2Hr_VXc9bEwjcHQ",
       twitter: "https://twitter.com/_rnrrdark",
@@ -2781,6 +2973,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HonmaHimawari.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC0g1AE0DOjBYnLhkgoRWN1w",
       twitter: "https://twitter.com/honmahimawari",
@@ -2793,6 +2986,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SasakiSaku.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCoztvTULBYd3WmStqYeoHcA",
       twitter: "https://twitter.com/saku_sasaki",
@@ -2805,6 +2999,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AzuchiMomo.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC6TfqY40Xt1Y0J-N18c85qQ",
       twitter: "https://twitter.com/momo_azuchi_",
@@ -2817,6 +3012,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "UzukiKou.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC3lNFeJiTq6L3UWoz4g1e-A",
       twitter: "https://twitter.com/udukikohh",
@@ -2829,6 +3025,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "NaruseNaru.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCoM_XmK45j504hfUWvN06Qg",
       twitter: "https://twitter.com/narusenaru_2434",
@@ -2842,6 +3039,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HarusakiAir.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCtAvQ5U0aXyKwm2i4GqFgJg",
       twitter: "https://twitter.com/harusakiair2434",
@@ -2854,6 +3052,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Ryushen.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCt5-0i4AVHXaWJrL8Wql3mw",
       twitter: "https://twitter.com/midori_2434",
@@ -2866,6 +3065,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SuzukiMasaru.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCryOPk2GZ1meIDt53tL30Tw",
       twitter: "https://twitter.com/darkness_eater",
@@ -2878,6 +3078,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Dola.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC53UDnhAAYwvNO7j_2Ju1cQ",
       twitter: "https://twitter.com/___Dola",
@@ -2890,6 +3091,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HassakuYuzu.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCFaDvgez8USXHiKidt0NtZg",
       twitter: "https://twitter.com/839yuzu",
@@ -2902,6 +3104,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "IzumoKasumi.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCLpYMk5h1bq8_GAFVBgXhPQ",
       twitter: "https://twitter.com/ikasumi_zzz",
@@ -2914,6 +3117,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "TodorokiKyoko.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCRV9d6YCYIMUszK-83TwxVA",
       twitter: "https://twitter.com/KT_seeds",
@@ -2927,6 +3131,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HanabatakeChaika.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCsFn_ueskBkMCEyzCEqAOvg",
       twitter: "https://twitter.com/ZulmIhP1nlMOT5y",
@@ -2939,6 +3144,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YashiroKizuku.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCKMYISTJAQ8xTplUPHiABlA",
       twitter: "https://twitter.com/846kizuQ",
@@ -2951,6 +3157,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "NakaoAzuma.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCks41vQN-hN-1KHmpZyPY3A",
       twitter: "https://twitter.com/azuma_dazo",
@@ -2963,6 +3170,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "NarutoKogane.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCF1JdALrXgub24weQpqDy9Q",
       twitter: "https://twitter.com/nArUtO_kOgAnE",
@@ -2975,6 +3183,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SisterClaire.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC1zFJrfEKvCixhsjNSb1toQ",
       twitter: "https://twitter.com/SisterCleaire",
@@ -2988,6 +3197,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "UmiyashanoKami.webp",
+    status: "ended",
     links: {
       youtube: "https://www.youtube.com/channel/UCqEp6RdtsMbUNrCdCswr6pA",
       twitter: "https://twitter.com/god_yaksa23",
@@ -3002,6 +3212,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AkabaneYouko.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCBi8YaVyZpiKWN3_Z0dCTfQ",
       twitter: "https://twitter.com/Youko_Akabane",
@@ -3014,6 +3225,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YuhiRiri.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC48jH1ul-6HOrcSSfoR02fQ",
       twitter: "https://twitter.com/Yuuhi_Riri",
@@ -3026,6 +3238,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Kanae.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCspv01oxUFf_MTSipURRhkA",
       twitch: "https://www.twitch.tv/kanae_2434",
@@ -3040,6 +3253,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "UshimiIchigo.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCmUjjW5zF1MMOhYUwwwQv9Q",
       twitter: "https://twitter.com/ushimi_ichigo",
@@ -3052,6 +3266,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SuzukaUtako.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCwokZsOK_uEre70XayaFnzA",
       twitter: "https://twitter.com/suzukautako",
@@ -3065,6 +3280,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "FuminoTamaki.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCBiqkFJljoxAj10SoP2w2Cg",
       twitter: "https://twitter.com/nekokan_chu",
@@ -3077,6 +3293,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "FushimiGaku.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCXU7YYxy_iQd3ulXyO-zC2w",
       twitter: "https://twitter.com/gaku_fushimi",
@@ -3089,6 +3306,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "GilzarenIII.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCUzJ90o1EjqUbk2pBAy0_aw",
       twitter: "https://twitter.com/Gilzaren_III",
@@ -3101,6 +3319,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MorinakaKazaki.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCtpB6Bvhs1Um93ziEDACQ8g",
     },
@@ -3112,6 +3331,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KenmochiToya.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCv1fFr156jc65EMiLbaLImw",
       twitter: "https://twitter.com/rei_Toya_rei",
@@ -3124,6 +3344,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "MononobeAlice.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCt0clH12Xk1-Ej5PXKGfdPA",
       twitter: "https://twitter.com/AliceMononobe",
@@ -3136,6 +3357,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "IenagaMugi.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC_GCs6GARLxEHxy1w40d6VQ",
       twitter: "https://twitter.com/ienaga_mugi23",
@@ -3149,6 +3371,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Kuzuha.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCSFCh5NL4qXrAy9u-u2lX3g",
       twitter: "https://twitter.com/Vamp_Kuzu",
@@ -3164,6 +3387,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Elu.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCYKP16oMX9KKPbrNgo_Kgag",
       twitter: "https://twitter.com/Elu_World",
@@ -3176,6 +3400,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "HiguchiKaede.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCsg-YqdqQ-KFF0LNk23BY4A",
       twitter: "https://twitter.com/HiguchiKaede",
@@ -3190,6 +3415,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "Moira.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCvmppcdYf4HOv-tFQhHHJMA",
       twitter: "https://twitter.com/Moiramoimoimoi",
@@ -3202,6 +3428,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ShibuyaHajime.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCeK9HFcRZoTrvqcUCtccMoQ",
       twitter: "https://twitter.com/sibuya_hajime",
@@ -3214,6 +3441,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "ShizukaRin.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UC6oDys1BGgBsIC3WhG1BovQ",
       twitch: "https://www.twitch.tv/shizurintv",
@@ -3227,6 +3455,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "SuzuyaAki.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCpnvhOIJ6BN-vPkYU9ls-Eg",
       twitter: "https://twitter.com/aki_suzuya",
@@ -3239,6 +3468,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "TsukinoMito.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCD-miitqNY3nyukJ4Fnf4_A",
       twitter: "https://twitter.com/MitoTsukino",
@@ -3251,6 +3481,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YukiChihiro.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCLO9QDxVL4bnvRRsz6K4bsQ",
       twitch: "https://www.twitch.tv/chihiro2434",
@@ -3265,6 +3496,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "jp",
     imageUrl: "YagurumaRine.webp",
+    status: "active",
     links: {
       youtube: "https://www.youtube.com/channel/UCvzVB-EYuHFXHZrObB8a_Og",
       twitter: "https://twitter.com/rine_yaguruma",
@@ -3277,6 +3509,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     agency: "nijisanji",
     region: "cn",
     imageUrl: "Remi.webp",
+    status: "active",
     links: {
       bilibili: "https://space.bilibili.com/690608687",
       twitter: "https://twitter.com/remifishy",
