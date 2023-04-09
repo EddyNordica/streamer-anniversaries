@@ -1430,7 +1430,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
     anniversaries: { birthday: null, debut: "2020/04/26" },
     agency: "nijisanji",
     region: "cn",
-    imageUrl: "Pax.webp",
+    imageUrl: "Pax.jpg",
     links: { bilibili: "https://space.bilibili.com/370688671" },
   },
   {
