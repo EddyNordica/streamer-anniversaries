@@ -39,7 +39,10 @@ export default function Home(props: HomeProps) {
   // This needs to run inside an effect hook to prevent a React hydration error because
   // it depends on the current time which will be always different on the server and client.
   React.useEffect(() => {
-    const currentDate = new Date();
+    // Use the toDateString method to remove the time from today's date as it is
+    // irrelevant in calculations. Not only that, but the calculations assumes
+    // the target date does not have time specified.
+    const currentDate = new Date(new Date().toDateString());
     const targetStreamers = filterStreamers(
       props.streamers,
       searchQuery,

@@ -76,14 +76,15 @@ export const sortStreamers = (
         targetDate
       );
       const diff = normalizedTime - targetDate.valueOf();
+      const days = convertUnixTimeToDays(diff);
 
-      if (diff > 0) {
+      if (days > 0) {
         upcoming.push({
           streamer,
-          days: convertUnixTimeToDays(diff),
+          days,
           age: calculateAnniversaryAge(dateString, anniversary, targetDate),
         });
-      } else if (diff < 0) {
+      } else if (days < 0) {
         throw new Error(
           "The difference should never be 0 since past dates should have been adjusted to the next year."
         );
