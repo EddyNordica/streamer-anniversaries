@@ -2562,7 +2562,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   {
     id: "ange-katrina",
     name: { ja: "アンジュ・カトリーナ", en: "Ange Katrina" },
-    anniversaries: { birthday: "09/10", debut: "2019/03/23" },
+    anniversaries: { birthday: "09/30", debut: "2019/03/23" },
     agency: "nijisanji",
     region: "jp",
     imageUrl: "AngeKatrina.webp",
