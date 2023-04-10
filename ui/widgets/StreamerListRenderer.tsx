@@ -1,7 +1,5 @@
-import { SupportedLocales } from "@/data/locales";
 import { StreamerAnniversary } from "@/data/streamers.types";
 import { StreamerData } from "@/lib/streamers";
-import { useTranslation } from "react-i18next";
 import { DeepReadonly } from "ts-essentials";
 import { StreamerList } from "./StreamerList";
 import { StreamerListItem } from "./StreamerListItem";
@@ -30,7 +28,6 @@ export const StreamerListRenderer = (props: StreamerListRenderer) => {
                 date={streamer.anniversaries[props.anniversary]}
                 days={days}
                 age={age}
-                anniversary={props.anniversary}
                 agency={streamer.agency}
                 region={streamer.region}
                 status={streamer.status}

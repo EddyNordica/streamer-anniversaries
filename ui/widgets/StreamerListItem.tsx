@@ -4,7 +4,6 @@ import { useTranslation, Trans } from "next-i18next";
 import { SupportedLocales, Translations } from "@/data/locales";
 import {
   StreamerAgency,
-  StreamerAnniversary,
   StreamerRegion,
   StreamerStatus,
 } from "@/data/streamers.types";
@@ -20,7 +19,6 @@ export interface StreamerListItemProps {
   date: string | null;
   days?: number;
   age?: number;
-  anniversary: StreamerAnniversary;
   agency: StreamerAgency;
   region: StreamerRegion;
   status: StreamerStatus;
@@ -42,7 +40,7 @@ const StreamerCard = (props: StreamerListItemProps) => {
   const [src, setSrc] = React.useState(`/images/streamers/${props.imageUrl}`);
 
   const locale = useSupportedLocale();
-  const dateText = useDateText(props.date, props.id, props.anniversary, locale);
+  const dateText = useDateText(props.date, props.id, locale);
 
   return (
     <div className="flex flex-1 flex-col p-8 relative">
@@ -132,13 +130,12 @@ const StreamerCard = (props: StreamerListItemProps) => {
 const useDateText = (
   dateString: string | null,
   id: string,
-  anniversary: StreamerAnniversary,
   locale: SupportedLocales | undefined
 ): string => {
   const { t } = useTranslation();
 
   if (dateString != null && locale != null) {
-    return convertToLocaleDate(dateString, anniversary, locale);
+    return convertToLocaleDate(dateString, locale);
   }
 
   if (id === "fumino-tamaki") {

@@ -21,6 +21,14 @@ const parseDateString = (dateString: string): Date => {
   return new Date(dateString);
 };
 
+const ensureYear = (dateString: string, year: number): string => {
+  if (hasNoYear(dateString)) {
+    return `${year}/${dateString}`;
+  }
+
+  return dateString;
+};
+
 /**
  * Creates a Date instance representing the current date without time.
  */
@@ -131,7 +139,6 @@ export const calculateAnniversaryAge = (
  */
 export const convertToLocaleDate = (
   dateString: string,
-  anniversary: StreamerAnniversary,
   locale: SupportedLocales
 ): string => {
   // Use any year because it's only needed for birthday where the year is not
@@ -140,16 +147,9 @@ export const convertToLocaleDate = (
   const dateStringWithYear = ensureYear(dateString, year);
 
   return parseDateString(dateStringWithYear).toLocaleDateString(locale, {
-    year: anniversary === "debut" ? "numeric" : undefined,
+    // Show the year only if the original date string contained a year.
+    year: dateStringWithYear === dateString ? "numeric" : undefined,
     month: "long",
     day: "numeric",
   });
-};
-
-const ensureYear = (dateString: string, year: number): string => {
-  if (hasNoYear(dateString)) {
-    return `${year}/${dateString};`;
-  }
-
-  return dateString;
 };
