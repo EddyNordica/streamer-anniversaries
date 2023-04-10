@@ -5,6 +5,31 @@ import { isNonEmptyString } from "@/utils/string";
 const MilliSecondsInADay = 86400000;
 const MilliSecondsInAYear = 31536000000;
 
+const hasNoYear = (dateString: string): boolean =>
+  /^[0-9]{2}\/[0-9]{2}$/.test(dateString);
+
+/**
+ * Parses the date string and returns a Date instance.
+ */
+const parseDateString = (dateString: string): Date => {
+  // Safari cannot parse dates that are not in YYYY/MM/DD format, so if the year
+  // is missing, throw an exception.
+  if (hasNoYear(dateString)) {
+    throw new Error("The date string is missing a year.");
+  }
+
+  return new Date(dateString);
+};
+
+/**
+ * Creates a Date instance representing the current date without time.
+ */
+export const createCurrentDateWithoutTime = (): Date =>
+  // Use the toDateString method to remove the time from today's date as it is
+  // irrelevant in calculations. Not only that, but the calculations assumes
+  // the target date does not have time specified.
+  new Date(new Date().toDateString());
+
 /**
  * Modifies the date string to use the year of the target date.
  */
@@ -16,9 +41,9 @@ const parseToDateWithTargetYear = (
   const targetYear = targetDate.getFullYear();
   switch (anniversary) {
     case "birthday":
-      return new Date(`${targetYear}/${dateString}`);
+      return parseDateString(`${targetYear}/${dateString}`);
     case "debut":
-      return new Date(dateString.replace(/^[0-9]{4}/, `${targetYear}`));
+      return parseDateString(dateString.replace(/^[0-9]{4}/, `${targetYear}`));
   }
 };
 
@@ -96,7 +121,7 @@ export const calculateAnniversaryAge = (
       return undefined;
     case "debut":
       return convertUnixTimeToYears(
-        targetDate.valueOf() - new Date(dateString).valueOf()
+        targetDate.valueOf() - parseDateString(dateString).valueOf()
       );
   }
 };
@@ -109,9 +134,22 @@ export const convertToLocaleDate = (
   anniversary: StreamerAnniversary,
   locale: SupportedLocales
 ): string => {
-  return new Date(dateString).toLocaleDateString(locale, {
+  // Use any year because it's only needed for birthday where the year is not
+  // shown.
+  const year = new Date().getFullYear();
+  const dateStringWithYear = ensureYear(dateString, year);
+
+  return parseDateString(dateStringWithYear).toLocaleDateString(locale, {
     year: anniversary === "debut" ? "numeric" : undefined,
     month: "long",
     day: "numeric",
   });
+};
+
+const ensureYear = (dateString: string, year: number): string => {
+  if (hasNoYear(dateString)) {
+    return `${year}/${dateString};`;
+  }
+
+  return dateString;
 };

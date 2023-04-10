@@ -65,7 +65,7 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
             <div className="mt-2">
               <MultiSelect<StreamerRegion>
                 name="regions"
-                label={t(Translations.region)}
+                label={t(Translations.regions)}
                 items={regions}
                 onSelected={props.setRegions}
                 getButtonText={getRegionsButtonText}

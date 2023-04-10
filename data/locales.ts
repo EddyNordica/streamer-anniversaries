@@ -16,6 +16,7 @@ export enum Translations {
   upcoming = "upcoming",
   unknown = "unknown",
   region = "region",
+  regions = "regions",
   home = "home",
   about = "about",
   openMainMenu = "openMainMenu",
