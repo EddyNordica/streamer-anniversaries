@@ -9,17 +9,18 @@ import {
   StreamerAnniversary,
   StreamerRegion,
 } from "@/data/streamers.types";
-import { SupportedLocales, Translations } from "@/data/locales";
+import { Translations } from "@/data/locales";
 import {
-  StreamerData,
   SortedSteamers,
   sortStreamers,
   filterStreamers,
 } from "@/lib/streamers";
 import { isNonEmptyString } from "@/utils/string";
-import { StreamerList } from "@/ui/widgets/StreamerList";
-import { StreamerListItem } from "@/ui/widgets/StreamerListItem";
-import { StreamerSearchForm } from "@/ui/widgets/StreamerSearchForm";
+import {
+  StreamerSearchForm,
+  useStreamerSearchForm,
+} from "@/ui/widgets/StreamerSearchForm";
+import { StreamerListRenderer } from "@/ui/widgets/StreamerListRenderer";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -30,26 +31,19 @@ interface HomeProps {
 export default function Home(props: HomeProps) {
   const { t } = useTranslation();
 
-  const [streamers, setStreamers] = React.useState<SortedSteamers>();
-  const [anniversary, setAnniversary] =
-    React.useState<StreamerAnniversary>("birthday");
-  const [regions, setRegions] = React.useState<StreamerRegion[]>([]);
-  const [searchQuery, setSearchQuery] = React.useState<string>();
-
-  // This needs to run inside an effect hook to prevent a React hydration error because
-  // it depends on the current time which will be always different on the server and client.
-  React.useEffect(() => {
-    // Use the toDateString method to remove the time from today's date as it is
-    // irrelevant in calculations. Not only that, but the calculations assumes
-    // the target date does not have time specified.
-    const currentDate = new Date(new Date().toDateString());
-    const targetStreamers = filterStreamers(
-      props.streamers,
-      searchQuery,
-      regions
-    );
-    setStreamers(sortStreamers([...targetStreamers], anniversary, currentDate));
-  }, [props.streamers, searchQuery, regions, anniversary]);
+  const [
+    [anniversary, setAnniversary],
+    [regions, setRegions],
+    [hideGraduated, setHideGraduated],
+    [searchQuery, setSearchQuery],
+  ] = useStreamerSearchForm();
+  const streamers = useSortedStreamers(
+    props.streamers,
+    anniversary,
+    regions,
+    hideGraduated,
+    searchQuery
+  );
 
   return (
     <main>
@@ -60,6 +54,7 @@ export default function Home(props: HomeProps) {
       <StreamerSearchForm
         setAnniversary={setAnniversary}
         setRegions={setRegions}
+        setHideGraduated={setHideGraduated}
         setSearchQuery={setSearchQuery}
       />
 
@@ -100,38 +95,35 @@ export default function Home(props: HomeProps) {
   );
 }
 
-interface StreamerListRenderer {
-  title: string;
-  streamers: DeepReadonly<StreamerData[]>;
-  anniversary: StreamerAnniversary;
-}
+const useSortedStreamers = (
+  allStreamers: DeepReadonly<Streamer[]>,
+  anniversary: StreamerAnniversary,
+  regions: StreamerRegion[],
+  hideGraduated: boolean,
+  searchQuery: string | undefined
+): SortedSteamers | undefined => {
+  const [sortedStreamers, setSortedStreamers] =
+    React.useState<SortedSteamers>();
 
-const StreamerListRenderer = (props: StreamerListRenderer) => {
-  const { i18n } = useTranslation();
+  // This needs to run inside an effect hook to prevent a React hydration error because
+  // it depends on the current time which will be always different on the server and client.
+  React.useEffect(() => {
+    // Use the toDateString method to remove the time from today's date as it is
+    // irrelevant in calculations. Not only that, but the calculations assumes
+    // the target date does not have time specified.
+    const currentDate = new Date(new Date().toDateString());
+    const targetStreamers = filterStreamers(
+      allStreamers,
+      searchQuery,
+      regions,
+      hideGraduated
+    );
+    setSortedStreamers(
+      sortStreamers([...targetStreamers], anniversary, currentDate)
+    );
+  }, [allStreamers, anniversary, regions, hideGraduated, searchQuery]);
 
-  return (
-    <>
-      {props.streamers.length > 0 && (
-        <StreamerList title={props.title}>
-          {props.streamers.map(({ streamer, days, age }) => {
-            return (
-              <StreamerListItem
-                key={streamer.id}
-                id={streamer.id}
-                name={streamer.name[i18n.language as SupportedLocales]}
-                imageUrl={streamer.imageUrl}
-                date={streamer.anniversaries[props.anniversary]}
-                days={days}
-                age={age}
-                agency={streamer.agency}
-                region={streamer.region}
-              />
-            );
-          })}
-        </StreamerList>
-      )}
-    </>
-  );
+  return sortedStreamers;
 };
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {

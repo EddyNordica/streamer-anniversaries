@@ -66,4 +66,7 @@ export enum Translations {
   termsText = "termsText",
   privacyPolicyText = "privacyPolicyText",
   everyday = "everyday",
+  hideGraduated = "hideGraduated",
+  hideGraduatedScreenReader = "hideGraduatedScreenReader",
+  graduated = "graduated",
 }

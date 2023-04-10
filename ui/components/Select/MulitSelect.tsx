@@ -17,6 +17,7 @@ export interface MultiSelectProps<T> {
   items: SelectItem<T>[];
   onSelected: (selection: T[]) => void;
   defaultItemIds?: string[];
+  getButtonText?: (selectedItems: SelectItem<T>[]) => string;
 }
 
 const NoSelectionSymbol = "_";
@@ -35,13 +36,13 @@ export const MultiSelect = <T,>(props: MultiSelectProps<T>) => {
     )
   );
 
-  const buttonText = selectedItems
-    .sort(
-      (a: SelectItem<T>, b: SelectItem<T>) =>
-        props.items.indexOf(a) - props.items.indexOf(b)
-    )
-    .map((item) => item.text)
-    .join(", ");
+  selectedItems.sort(
+    (a: SelectItem<T>, b: SelectItem<T>) =>
+      props.items.indexOf(a) - props.items.indexOf(b)
+  );
+  const buttonText =
+    props.getButtonText?.(selectedItems) ??
+    selectedItems.map((item) => item.text).join(", ");
 
   return (
     <Listbox

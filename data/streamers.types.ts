@@ -52,7 +52,7 @@ export type StreamerAgency = (typeof Agency)[number];
  * the current person/character. Usually, this means the person has graduated.
  * This does not include those who were forcibly terminated.
  */
-export const Status = ["active", "ended"];
+export const Status = ["active", "ended"] as const;
 export type StreamerStatus = (typeof Status)[number];
 
 export const Social = [

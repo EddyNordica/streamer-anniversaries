@@ -143,13 +143,12 @@ export const getRegionName = (region: StreamerRegion): Translations => {
 export const filterStreamers = (
   streamers: DeepReadonly<Streamer[]>,
   searchQuery: string | undefined,
-  regions: StreamerRegion[] | undefined
+  regions: StreamerRegion[] | undefined,
+  hideGraduated: boolean
 ): DeepReadonly<Streamer[]> => {
-  if (!isNonEmptyString(searchQuery) && regions?.length === 0) {
-    return streamers;
-  }
-
-  let filtered: DeepReadonly<Streamer[]> = [...streamers];
+  let filtered: DeepReadonly<Streamer[]> = streamers.filter(
+    (streamer) => !hideGraduated || streamer.status === "active"
+  );
 
   if (isNonEmptyString(searchQuery)) {
     filtered = filtered.filter((streamer) => {

@@ -39,5 +39,8 @@
   "privacyPolicyText": "There are some settings stored locally, but it's not anything I can use to identify individuals.",
   "builtBy": "Built by",
   "sourceCode": "Source Code",
-  "everyday": "Everyday!"
+  "everyday": "Everyday!",
+  "graduated": "Graduated",
+  "hideGraduated": "Hide Graduated<i></i>Streamers",
+  "hideGraduatedScreenReader": "Hide Graduated< Streamers"
 }

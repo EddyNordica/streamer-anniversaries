@@ -2,9 +2,14 @@ import React from "react";
 import Image from "next/image";
 import { useTranslation, Trans } from "next-i18next";
 import { Translations } from "@/data/locales";
-import { StreamerAgency, StreamerRegion } from "@/data/streamers.types";
+import {
+  StreamerAgency,
+  StreamerRegion,
+  StreamerStatus,
+} from "@/data/streamers.types";
 import { convertToLocaleShortDate } from "@/lib/date";
 import { getRegionName } from "@/lib/streamers";
+import { AcademicCapIcon } from "@heroicons/react/24/outline";
 
 export interface StreamerListItemProps {
   id: string;
@@ -15,6 +20,7 @@ export interface StreamerListItemProps {
   age?: number;
   agency: StreamerAgency;
   region: StreamerRegion;
+  status: StreamerStatus;
 }
 
 export const StreamerListItem = (props: StreamerListItemProps) => {
@@ -94,12 +100,26 @@ const StreamerCard = (props: StreamerListItemProps) => {
           <dd className="mt-3">
             <span
               title={t(getRegionName(props.region)) ?? undefined}
+              aria-label={t(getRegionName(props.region)) ?? undefined}
               className="rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-800 cursor-default"
             >
               {t(props.region).toUpperCase()}
             </span>
           </dd>
         </div>
+
+        {/* Status */}
+        {props.status === "ended" && (
+          <div className="absolute top-0 left-3">
+            <dt className="sr-only">{t(Translations.graduated)}</dt>
+            <dd className="mt-3">
+              <AcademicCapIcon
+                title={t(Translations.graduated) ?? undefined}
+                className="h-5 w-5 text-gray-500"
+              />
+            </dd>
+          </div>
+        )}
       </dl>
     </div>
   );
