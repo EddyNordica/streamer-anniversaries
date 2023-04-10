@@ -25,7 +25,7 @@ export interface StreamerData {
   days?: number;
 
   /**
-   * THe age of the anniversary.
+   * The age of the anniversary.
    */
   age?: number;
 }
@@ -55,7 +55,7 @@ export interface SortedSteamers {
 export const sortStreamers = (
   streamers: Streamer[],
   anniversary: StreamerAnniversary,
-  targetDate: Date
+  targetDate: Date // This date must not contain time.
 ): SortedSteamers => {
   const today: StreamerData[] = [];
   const upcoming: StreamerData[] = [];
@@ -86,7 +86,7 @@ export const sortStreamers = (
         });
       } else if (days < 0) {
         throw new Error(
-          "The difference should never be 0 since past dates should have been adjusted to the next year."
+          "The difference should never be less than 0 since past dates should have been adjusted to the next year."
         );
       } else {
         today.push({ streamer });

@@ -3382,7 +3382,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "elu",
-    name: { ja: "エルフのえる", en: "Elu" },
+    name: { ja: "える", en: "Elu" },
     anniversaries: { birthday: "01/24", debut: "2018/02/08" },
     agency: "nijisanji",
     region: "jp",
