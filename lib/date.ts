@@ -3,7 +3,6 @@ import { HasAnniversaries, StreamerAnniversary } from "@/data/streamers.types";
 import { isNonEmptyString } from "@/utils/string";
 
 const MilliSecondsInADay = 86400000;
-const MilliSecondsInAYear = 31536000000;
 
 const hasNoYear = (dateString: string): boolean =>
   /^[0-9]{2}\/[0-9]{2}$/.test(dateString);
@@ -32,11 +31,12 @@ const ensureYear = (dateString: string, year: number): string => {
 /**
  * Creates a Date instance representing the current date without time.
  */
-export const createCurrentDateWithoutTime = (): Date =>
+export const removeTime = (date: Date): Date => {
   // Use the toDateString method to remove the time from today's date as it is
   // irrelevant in calculations. Not only that, but the calculations assumes
   // the target date does not have time specified.
-  new Date(new Date().toDateString());
+  return new Date(date.toDateString());
+};
 
 /**
  * Modifies the date string to use the year of the target date.
@@ -111,12 +111,6 @@ export const convertUnixTimeToDays = (time: number) =>
   Math.ceil(time / MilliSecondsInADay);
 
 /**
- * Converts the specified Unix time to years.
- */
-export const convertUnixTimeToYears = (time: number) =>
-  Math.ceil(time / MilliSecondsInAYear);
-
-/**
  * Calculates the age of the anniversary.
  */
 export const calculateAnniversaryAge = (
@@ -128,8 +122,11 @@ export const calculateAnniversaryAge = (
     case "birthday":
       return undefined;
     case "debut":
-      return convertUnixTimeToYears(
-        targetDate.valueOf() - parseDateString(dateString).valueOf()
+      // Needs to take max of 1 if a streamer debuted in the same year as the
+      // target date.
+      return Math.max(
+        targetDate.getFullYear() - parseDateString(dateString).getFullYear(),
+        1
       );
   }
 };

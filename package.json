@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.13",
@@ -34,6 +36,8 @@
     "@typescript-eslint/parser": "^5.57.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier-plugin-tailwindcss": "^0.2.7",
-    "ts-essentials": "^9.3.1"
+    "ts-essentials": "^9.3.1",
+    "vite-tsconfig-paths": "^4.0.9",
+    "vitest": "^0.30.0"
   }
 }

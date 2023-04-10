@@ -21,7 +21,7 @@ import {
   useStreamerSearchForm,
 } from "@/ui/widgets/StreamerSearchForm";
 import { StreamerListRenderer } from "@/ui/widgets/StreamerListRenderer";
-import { createCurrentDateWithoutTime } from "@/lib/date";
+import { removeTime } from "@/lib/date";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -109,7 +109,7 @@ const useSortedStreamers = (
   // This needs to run inside an effect hook to prevent a React hydration error because
   // it depends on the current time which will be always different on the server and client.
   React.useEffect(() => {
-    const currentDate = createCurrentDateWithoutTime();
+    const currentDate = removeTime(new Date());
     const targetStreamers = filterStreamers(
       allStreamers,
       searchQuery,
