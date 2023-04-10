@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { DeepReadonly } from "ts-essentials";
 import { StreamerList } from "./StreamerList";
 import { StreamerListItem } from "./StreamerListItem";
+import { useSupportedLocale } from "@/lib/locale";
 
 export interface StreamerListRenderer {
   title: string;
@@ -13,22 +14,23 @@ export interface StreamerListRenderer {
 }
 
 export const StreamerListRenderer = (props: StreamerListRenderer) => {
-  const { i18n } = useTranslation();
+  const locale = useSupportedLocale();
 
   return (
     <>
-      {props.streamers.length > 0 && (
+      {props.streamers.length > 0 && locale != null && (
         <StreamerList title={props.title}>
           {props.streamers.map(({ streamer, days, age }) => {
             return (
               <StreamerListItem
                 key={streamer.id}
                 id={streamer.id}
-                name={streamer.name[i18n.language as SupportedLocales]}
+                name={streamer.name[locale]}
                 imageUrl={streamer.imageUrl}
                 date={streamer.anniversaries[props.anniversary]}
                 days={days}
                 age={age}
+                anniversary={props.anniversary}
                 agency={streamer.agency}
                 region={streamer.region}
                 status={streamer.status}

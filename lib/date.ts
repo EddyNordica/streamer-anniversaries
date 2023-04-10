@@ -1,3 +1,4 @@
+import { SupportedLocales } from "@/data/locales";
 import { HasAnniversaries, StreamerAnniversary } from "@/data/streamers.types";
 import { isNonEmptyString } from "@/utils/string";
 
@@ -101,9 +102,16 @@ export const calculateAnniversaryAge = (
 };
 
 /**
- * Converts the specified date string to a locale short date.
+ * Converts the specified date string to a locale date.
  */
-export const convertToLocaleShortDate = (dateString: string): string => {
-  // TODO
-  return dateString;
+export const convertToLocaleDate = (
+  dateString: string,
+  anniversary: StreamerAnniversary,
+  locale: SupportedLocales
+): string => {
+  return new Date(dateString).toLocaleDateString(locale, {
+    year: anniversary === "debut" ? "numeric" : undefined,
+    month: "long",
+    day: "numeric",
+  });
 };

@@ -4,7 +4,8 @@ import Link from "next/link";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
-import { SupportedLocales, Languages } from "@/data/locales";
+import { SupportedLocales } from "@/data/locales";
+import { getLanguageName } from "@/lib/locale";
 
 export interface LocaleDropdownMenuItem {
   id: string;
@@ -24,7 +25,7 @@ export const LocaleDropdown = (props: LocaleDropdownProps) => {
       <div>
         <Menu.Button
           className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-          aria-label={Languages[props.selectedLocale]}
+          aria-label={getLanguageName(props.selectedLocale)}
         >
           <GlobeAltIcon className="mr-1 h-5 w-5" />
           {props.selectedLocale.toUpperCase()}

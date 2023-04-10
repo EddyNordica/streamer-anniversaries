@@ -9,16 +9,12 @@ import {
   LocaleDropdownMenuItem,
 } from "@/ui/widgets/LocaleDropdown";
 import { PageContainer } from "@/ui/layout/PageContainer";
-import {
-  Locales,
-  Languages,
-  Translations,
-  SupportedLocales,
-} from "@/data/locales";
+import { Locales, Translations } from "@/data/locales";
+import { getLanguageName, useSupportedLocale } from "@/lib/locale";
 
 const languageOptions: LocaleDropdownMenuItem[] = Locales.map((locale) => ({
   id: locale,
-  name: Languages[locale],
+  name: getLanguageName(locale),
   locale,
 }));
 
@@ -42,8 +38,9 @@ const navigation: NavigationItem[] = [
 ];
 
 export const Header = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const router = useRouter();
+  const locale = useSupportedLocale();
 
   return (
     <Disclosure as="nav" className="bg-white shadow">
@@ -78,17 +75,17 @@ export const Header = () => {
                   </div>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                  {i18n.language != null && (
+                  {locale != null && (
                     <LocaleDropdown
-                      selectedLocale={i18n.language as SupportedLocales}
+                      selectedLocale={locale}
                       items={languageOptions}
                     />
                   )}
                 </div>
                 <div className="-mr-2 flex items-center sm:hidden">
-                  {i18n.language != null && (
+                  {locale != null && (
                     <LocaleDropdown
-                      selectedLocale={i18n.language as SupportedLocales}
+                      selectedLocale={locale}
                       items={languageOptions}
                     />
                   )}
