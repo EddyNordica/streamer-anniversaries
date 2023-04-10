@@ -4,6 +4,7 @@ import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { SelectItem } from "./Select";
 
 export interface SelectContentProps<T> {
+  name: string;
   label: string;
   buttonText: string;
   buttonLabel?: string;
@@ -14,11 +15,18 @@ export interface SelectContentProps<T> {
 export const SelectContent = <T,>(props: SelectContentProps<T>) => {
   return (
     <>
-      <Listbox.Label className="block text-sm font-medium leading-6 text-gray-900">
+      <Listbox.Label
+        className="block text-sm font-medium leading-6 text-gray-900"
+        htmlFor={props.name}
+      >
         {props.label}
       </Listbox.Label>
       <div className="relative mt-2">
-        <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <Listbox.Button
+          id={props.name}
+          name={props.name}
+          className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        >
           <span className="block truncate" aria-label={props.buttonLabel}>
             {props.buttonText}
           </span>

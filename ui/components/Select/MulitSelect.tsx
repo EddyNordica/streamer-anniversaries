@@ -12,6 +12,7 @@ export interface SelectItem<T> {
 }
 
 export interface MultiSelectProps<T> {
+  name: string;
   label: string;
   items: SelectItem<T>[];
   onSelected: (selection: T[]) => void;
@@ -54,6 +55,7 @@ export const MultiSelect = <T,>(props: MultiSelectProps<T>) => {
       {({ open }) => (
         <>
           <SelectContent
+            name={props.name}
             label={props.label}
             buttonLabel={
               isNonEmptyString(buttonText)

@@ -9,6 +9,7 @@ export interface SelectItem<T> {
 }
 
 export interface SelectProps<T> {
+  name: string;
   label: string;
   items: SelectItem<T>[];
   onSelected: (selection: T) => void;
@@ -36,6 +37,7 @@ export const Select = <T,>(props: SelectProps<T>) => {
     >
       {({ open }) => (
         <SelectContent
+          name={props.name}
           label={props.label}
           buttonText={selectedItem.text}
           items={props.items}
