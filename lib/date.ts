@@ -3,6 +3,7 @@ import { HasAnniversaries, StreamerAnniversary } from "@/data/streamers.types";
 import { isNonEmptyString } from "@/utils/string";
 
 const MilliSecondsInADay = 86400000;
+const MilliSecondsInAYear = 31536000000;
 
 const hasNoYear = (dateString: string): boolean =>
   /^[0-9]{2}\/[0-9]{2}$/.test(dateString);
@@ -111,6 +112,12 @@ export const convertUnixTimeToDays = (time: number) =>
   Math.ceil(time / MilliSecondsInADay);
 
 /**
+ * Converts the specified Unix time to years.
+ */
+export const convertUnixTimeToYears = (time: number) =>
+  Math.ceil(time / MilliSecondsInAYear);
+
+/**
  * Calculates the age of the anniversary.
  */
 export const calculateAnniversaryAge = (
@@ -125,7 +132,9 @@ export const calculateAnniversaryAge = (
       // Needs to take max of 1 if a streamer debuted in the same year as the
       // target date.
       return Math.max(
-        targetDate.getFullYear() - parseDateString(dateString).getFullYear(),
+        convertUnixTimeToYears(
+          targetDate.valueOf() - parseDateString(dateString).valueOf()
+        ),
         1
       );
   }
