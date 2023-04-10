@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer className="bg-gray-900">
       <PageContainer>
-        <div className="max-w-7xl py-6 flex items-center">
+        <div className="py-6 flex items-center">
           <p className="text-center text-s leading-5 text-gray-400 m-auto">
             <span>
               Made with{" "}
