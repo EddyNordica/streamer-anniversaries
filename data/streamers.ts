@@ -414,7 +414,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "girimi",
-    name: { ja: "ギリミ", en: "Girimi", cn: "雾深" },
+    name: { ja: "ギリミ", en: "Girimi", zh: "雾深" },
     anniversaries: { birthday: "08/05", debut: "2022/01/03" },
     agency: "nijisanji",
     region: "cn",
@@ -427,7 +427,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "karisa",
-    name: { ja: "カリサ", en: "Karisa", cn: "狩砂" },
+    name: { ja: "カリサ", en: "Karisa", zh: "狩砂" },
     anniversaries: { birthday: "07/05", debut: "2022/01/03" },
     agency: "nijisanji",
     region: "cn",
@@ -440,7 +440,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "kiyuu",
-    name: { ja: "キユウ", en: "Kiyuu", cn: "希侑" },
+    name: { ja: "キユウ", en: "Kiyuu", zh: "希侑" },
     anniversaries: { birthday: "12/25", debut: "2022/01/03" },
     agency: "nijisanji",
     region: "cn",
@@ -454,7 +454,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "sybil",
-    name: { ja: "シヴィル", en: "Sybil", cn: "希维" },
+    name: { ja: "シヴィル", en: "Sybil", zh: "希维" },
     anniversaries: { birthday: "04/20", debut: "2022/01/03" },
     agency: "nijisanji",
     region: "cn",
@@ -596,7 +596,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "hunger",
-    name: { ja: "ハンガー", en: "Hunger", cn: "暴食" },
+    name: { ja: "ハンガー", en: "Hunger", zh: "暴食" },
     anniversaries: { birthday: "09/22", debut: "2021/10/04" },
     agency: "nijisanji",
     region: "cn",
@@ -606,7 +606,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "keke",
-    name: { ja: "カカ", en: "Keke", cn: "克克" },
+    name: { ja: "カカ", en: "Keke", zh: "克克" },
     anniversaries: { birthday: "03/29", debut: "2021/10/04" },
     agency: "nijisanji",
     region: "cn",
@@ -619,7 +619,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "yog",
-    name: { ja: "ヨグ", en: "Yog", cn: "尤格" },
+    name: { ja: "ヨグ", en: "Yog", zh: "尤格" },
     anniversaries: { birthday: "07/03", debut: "2021/10/04" },
     agency: "nijisanji",
     region: "cn",
@@ -632,7 +632,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "uka",
-    name: { ja: "ウカ", en: "Uka", cn: "友夏" },
+    name: { ja: "ウカ", en: "Uka", zh: "友夏" },
     anniversaries: { birthday: "12/18", debut: "2021/09/25" },
     agency: "nijisanji",
     region: "cn",
@@ -645,7 +645,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "ha-yun",
-    name: { ja: "ハ・ユン", en: "Ha Yun", kr: "하윤" },
+    name: { ja: "ハ・ユン", en: "Ha Yun", ko: "하윤" },
     anniversaries: { birthday: "07/12", debut: "2021/09/01" },
     agency: "nijisanji",
     region: "kr",
@@ -659,7 +659,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "ko-yami",
-    name: { ja: "コ・ヤミ", en: "Ko Yami", kr: "고야미" },
+    name: { ja: "コ・ヤミ", en: "Ko Yami", ko: "고야미" },
     anniversaries: { birthday: "03/03", debut: "2021/09/01" },
     agency: "nijisanji",
     region: "kr",
@@ -673,7 +673,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "lee-on",
-    name: { ja: "イ・オン", en: "Lee On", kr: "이온" },
+    name: { ja: "イ・オン", en: "Lee On", ko: "이온" },
     anniversaries: { birthday: "11/14", debut: "2021/09/01" },
     agency: "nijisanji",
     region: "kr",
@@ -687,7 +687,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "na-sera",
-    name: { ja: "ナ・セラ", en: "Na Sera", kr: "나세라" },
+    name: { ja: "ナ・セラ", en: "Na Sera", ko: "나세라" },
     anniversaries: { birthday: "11/03", debut: "2021/09/01" },
     agency: "nijisanji",
     region: "kr",
@@ -741,7 +741,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "yomiya",
-    name: { ja: "ヨミヤ", en: "Yomiya", cn: "夜宫" },
+    name: { ja: "ヨミヤ", en: "Yomiya", zh: "夜宫" },
     anniversaries: { birthday: "03/21", debut: "2021/07/30" },
     agency: "nijisanji",
     region: "cn",
@@ -751,7 +751,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "hakuja",
-    name: { ja: "ハクジャ", en: "Hakuja", cn: "库伽" },
+    name: { ja: "ハクジャ", en: "Hakuja", zh: "库伽" },
     anniversaries: { birthday: "04/30", debut: "2021/07/29" },
     agency: "nijisanji",
     region: "cn",
@@ -761,7 +761,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "koxia",
-    name: { ja: "コシヤ", en: "Koxia", cn: "恋诗夜" },
+    name: { ja: "コシヤ", en: "Koxia", zh: "恋诗夜" },
     anniversaries: { birthday: "08/10", debut: "2021/07/29" },
     agency: "nijisanji",
     region: "cn",
@@ -775,7 +775,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "miyu",
-    name: { ja: "ミ・ユ", en: "Miyu", cn: "未羽" },
+    name: { ja: "ミ・ユ", en: "Miyu", zh: "未羽" },
     anniversaries: { birthday: "02/06", debut: "2021/07/29" },
     agency: "nijisanji",
     region: "cn",
@@ -785,7 +785,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "rhea",
-    name: { ja: "リア", en: "Rhea", cn: "瑞娅" },
+    name: { ja: "リア", en: "Rhea", zh: "瑞娅" },
     anniversaries: { birthday: "08/07", debut: "2021/07/29" },
     agency: "nijisanji",
     region: "cn",
@@ -944,7 +944,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "kiti",
-    name: { ja: "キキ", en: "Kiti", cn: "吉吉" },
+    name: { ja: "キキ", en: "Kiti", zh: "吉吉" },
     anniversaries: { birthday: "06/15", debut: "2021/05/09" },
     agency: "nijisanji",
     region: "cn",
@@ -954,7 +954,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "qilou",
-    name: { ja: "キロウ", en: "Qilou", cn: "绮楼" },
+    name: { ja: "キロウ", en: "Qilou", zh: "绮楼" },
     anniversaries: { birthday: "01/23", debut: "2021/05/09" },
     agency: "nijisanji",
     region: "cn",
@@ -964,7 +964,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "tocci",
-    name: { ja: "トッチ", en: "Tocci", cn: "桃星" },
+    name: { ja: "トッチ", en: "Tocci", zh: "桃星" },
     anniversaries: { birthday: "03/31", debut: "2021/05/09" },
     agency: "nijisanji",
     region: "cn",
@@ -974,7 +974,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "ban-hada",
-    name: { ja: "バン・ハダ", en: "Ban Hada", kr: "반하다" },
+    name: { ja: "バン・ハダ", en: "Ban Hada", ko: "반하다" },
     anniversaries: { birthday: "08/30", debut: "2021/04/30" },
     agency: "nijisanji",
     region: "kr",
@@ -988,7 +988,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "seffyna",
-    name: { ja: "セフィナ", en: "Seffyna", kr: "세피나" },
+    name: { ja: "セフィナ", en: "Seffyna", ko: "세피나" },
     anniversaries: { birthday: "08/02", debut: "2021/04/30" },
     agency: "nijisanji",
     region: "kr",
@@ -1002,7 +1002,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "song-mia",
-    name: { ja: "ソン・ミア", en: "Song Mia", kr: "송미아" },
+    name: { ja: "ソン・ミア", en: "Song Mia", ko: "송미아" },
     anniversaries: { birthday: "11/23", debut: "2021/04/30" },
     agency: "nijisanji",
     region: "kr",
@@ -1016,7 +1016,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "mayumi",
-    name: { ja: "マユミ", en: "Mayumi", cn: "勾檀" },
+    name: { ja: "マユミ", en: "Mayumi", zh: "勾檀" },
     anniversaries: { birthday: "08/16", debut: "2021/03/13" },
     agency: "nijisanji",
     region: "cn",
@@ -1026,7 +1026,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "tsukumo",
-    name: { ja: "ツクモ", en: "Tsukumo", cn: "九十九" },
+    name: { ja: "ツクモ", en: "Tsukumo", zh: "九十九" },
     anniversaries: { birthday: "04/16", debut: "2021/03/13" },
     agency: "nijisanji",
     region: "cn",
@@ -1036,7 +1036,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "kendou",
-    name: { ja: "ケンドウ", en: "Kendou", cn: "犬童" },
+    name: { ja: "ケンドウ", en: "Kendou", zh: "犬童" },
     anniversaries: { birthday: "07/09", debut: "2021/03/05" },
     agency: "nijisanji",
     region: "cn",
@@ -1050,7 +1050,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "chiyuu",
-    name: { ja: "チユウ", en: "Chiyuu", cn: "千幽" },
+    name: { ja: "チユウ", en: "Chiyuu", zh: "千幽" },
     anniversaries: { birthday: "06/01", debut: "2020/12/18" },
     agency: "nijisanji",
     region: "cn",
@@ -1063,7 +1063,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "imi",
-    name: { ja: "イミ", en: "Imi", cn: "伊深" },
+    name: { ja: "イミ", en: "Imi", zh: "伊深" },
     anniversaries: { birthday: "08/25", debut: "2020/12/18" },
     agency: "nijisanji",
     region: "cn",
@@ -1076,7 +1076,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "mari",
-    name: { ja: "マリ", en: "Mari", cn: "茉里" },
+    name: { ja: "マリ", en: "Mari", zh: "茉里" },
     anniversaries: { birthday: "10/24", debut: "2020/12/18" },
     agency: "nijisanji",
     region: "cn",
@@ -1090,7 +1090,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "tanoshiba",
-    name: { ja: "タノシバ", en: "Tanoshiba", cn: "田野柴" },
+    name: { ja: "タノシバ", en: "Tanoshiba", zh: "田野柴" },
     anniversaries: { birthday: "02/18", debut: "2020/12/06" },
     agency: "nijisanji",
     region: "cn",
@@ -1139,7 +1139,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "oh-jiyu",
-    name: { ja: "オ・ジユ", en: "Oh Jiyu", kr: "오지유" },
+    name: { ja: "オ・ジユ", en: "Oh Jiyu", ko: "오지유" },
     anniversaries: { birthday: "12/12", debut: "2020/10/16" },
     agency: "nijisanji",
     region: "kr",
@@ -1153,7 +1153,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "ryu-hari",
-    name: { ja: "リュ・ハリ", en: "Ryu Hari", kr: "류하리" },
+    name: { ja: "リュ・ハリ", en: "Ryu Hari", ko: "류하리" },
     anniversaries: { birthday: "06/26", debut: "2020/10/16" },
     agency: "nijisanji",
     region: "kr",
@@ -1167,7 +1167,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "shin-kiru",
-    name: { ja: "シン・ギ", en: "Shin Kiru", kr: "신기루" },
+    name: { ja: "シン・ギ", en: "Shin Kiru", ko: "신기루" },
     anniversaries: { birthday: "05/30", debut: "2020/10/16" },
     agency: "nijisanji",
     region: "kr",
@@ -1181,7 +1181,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "yang-nari",
-    name: { ja: "ヤン・ナリ", en: "Yang Nari", kr: "양나리" },
+    name: { ja: "ヤン・ナリ", en: "Yang Nari", ko: "양나리" },
     anniversaries: { birthday: "01/27", debut: "2020/10/16" },
     agency: "nijisanji",
     region: "kr",
@@ -1195,7 +1195,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "reve-iris",
-    name: { ja: "レフ", en: "Reve", cn: "瑞芙" },
+    name: { ja: "レフ", en: "Reve", zh: "瑞芙" },
     anniversaries: { birthday: "03/09", debut: "2020/09/30" },
     agency: "nijisanji",
     region: "cn",
@@ -1208,7 +1208,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "shaun",
-    name: { ja: "シャン", en: "Shaun", cn: "勺" },
+    name: { ja: "シャン", en: "Shaun", zh: "勺" },
     anniversaries: { birthday: "03/03", debut: "2020/09/30" },
     agency: "nijisanji",
     region: "cn",
@@ -1223,7 +1223,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "sirius",
-    name: { ja: "シリウス", en: "Sirius", cn: "星宸" },
+    name: { ja: "シリウス", en: "Sirius", zh: "星宸" },
     anniversaries: { birthday: "07/19", debut: "2020/09/30" },
     agency: "nijisanji",
     region: "cn",
@@ -1233,7 +1233,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "yua",
-    name: { ja: "ユア", en: "Yua", cn: "悠亚" },
+    name: { ja: "ユア", en: "Yua", zh: "悠亚" },
     anniversaries: { birthday: "08/19", debut: "2020/09/30" },
     agency: "nijisanji",
     region: "cn",
@@ -1247,7 +1247,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "nyatsuki",
-    name: { ja: "ニャツキ", en: "Nyatsuki", cn: "喵月" },
+    name: { ja: "ニャツキ", en: "Nyatsuki", zh: "喵月" },
     anniversaries: { birthday: "09/19", debut: "2020/09/29" },
     agency: "nijisanji",
     region: "cn",
@@ -1260,7 +1260,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "plus",
-    name: { ja: "プラス", en: "Plus", cn: "有加" },
+    name: { ja: "プラス", en: "Plus", zh: "有加" },
     anniversaries: { birthday: "06/03", debut: "2020/09/29" },
     agency: "nijisanji",
     region: "cn",
@@ -1274,7 +1274,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "waku",
-    name: { ja: "ワクヒメ", en: "Waku", cn: "惑姬" },
+    name: { ja: "ワクヒメ", en: "Waku", zh: "惑姬" },
     anniversaries: { birthday: null, debut: "2020/09/29" },
     agency: "nijisanji",
     region: "cn",
@@ -1394,7 +1394,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "akira-ray",
-    name: { ja: "明楽レイ", en: "Akira Ray", kr: "아키라레이" },
+    name: { ja: "明楽レイ", en: "Akira Ray", ko: "아키라레이" },
     anniversaries: { birthday: "05/08", debut: "2020/08/07" },
     agency: "nijisanji",
     region: "kr",
@@ -1408,7 +1408,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "lee-roha",
-    name: { ja: "イ・ロハ", en: "Lee Roha", kr: "이로하" },
+    name: { ja: "イ・ロハ", en: "Lee Roha", ko: "이로하" },
     anniversaries: { birthday: "12/12", debut: "2020/08/07" },
     agency: "nijisanji",
     region: "kr",
@@ -1422,7 +1422,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "nun-bora",
-    name: { ja: "ヌン・ボラ", en: "Nun Bora", kr: "눈보라" },
+    name: { ja: "ヌン・ボラ", en: "Nun Bora", ko: "눈보라" },
     anniversaries: { birthday: "01/05", debut: "2020/08/07" },
     agency: "nijisanji",
     region: "kr",
@@ -1436,7 +1436,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "kiyora",
-    name: { ja: "キヨラ", en: "Kiyora", cn: "清良" },
+    name: { ja: "キヨラ", en: "Kiyora", zh: "清良" },
     anniversaries: { birthday: "12/07", debut: "2020/07/31" },
     agency: "nijisanji",
     region: "cn",
@@ -1449,7 +1449,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "chaos",
-    name: { ja: "カオス", en: "Chaos", cn: "卡欧斯" },
+    name: { ja: "カオス", en: "Chaos", zh: "卡欧斯" },
     anniversaries: { birthday: "04/13", debut: "2020/07/30" },
     agency: "nijisanji",
     region: "cn",
@@ -1462,7 +1462,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "chiharu",
-    name: { ja: "チハル", en: "Chiharu", cn: "千春" },
+    name: { ja: "チハル", en: "Chiharu", zh: "千春" },
     anniversaries: { birthday: "11/04", debut: "2020/07/29" },
     agency: "nijisanji",
     region: "cn",
@@ -1488,7 +1488,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "lee-siu",
-    name: { ja: "イ・シウ", en: "Lee Siu", kr: "이시우" },
+    name: { ja: "イ・シウ", en: "Lee Siu", ko: "이시우" },
     anniversaries: { birthday: "12/26", debut: "2020/05/22" },
     agency: "nijisanji",
     region: "kr",
@@ -1502,7 +1502,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "so-nagi",
-    name: { ja: "ソ・ナギ", en: "So Nagi", kr: "소나기" },
+    name: { ja: "ソ・ナギ", en: "So Nagi", ko: "소나기" },
     anniversaries: { birthday: "11/13", debut: "2020/05/22" },
     agency: "nijisanji",
     region: "kr",
@@ -1516,7 +1516,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "pax",
-    name: { ja: "パックス", en: "Pax", cn: "帕克丝" },
+    name: { ja: "パックス", en: "Pax", zh: "帕克丝" },
     anniversaries: { birthday: null, debut: "2020/04/26" },
     agency: "nijisanji",
     region: "cn",
@@ -1526,7 +1526,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "shiki",
-    name: { ja: "シキ", en: "Shiki", cn: "紫纪" },
+    name: { ja: "シキ", en: "Shiki", zh: "紫纪" },
     anniversaries: { birthday: null, debut: "2020/04/26" },
     agency: "nijisanji",
     region: "cn",
@@ -1536,7 +1536,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "samael",
-    name: { ja: "サマエル", en: "Samael", cn: "萨麦尔" },
+    name: { ja: "サマエル", en: "Samael", zh: "萨麦尔" },
     anniversaries: { birthday: "06/13", debut: "2020/04/25" },
     agency: "nijisanji",
     region: "cn",
@@ -1549,7 +1549,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "karu",
-    name: { ja: "カル", en: "Karu", cn: "花留" },
+    name: { ja: "カル", en: "Karu", zh: "花留" },
     anniversaries: { birthday: "06/22", debut: "2020/04/17" },
     agency: "nijisanji",
     region: "cn",
@@ -1628,7 +1628,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "gaon",
-    name: { ja: "ガオン", en: "Gaon", kr: "가온" },
+    name: { ja: "ガオン", en: "Gaon", ko: "가온" },
     anniversaries: { birthday: "02/22", debut: "2020/03/12" },
     agency: "nijisanji",
     region: "kr",
@@ -1695,7 +1695,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "min-suha",
-    name: { ja: "ミン・スゥーハ", en: "Min Suha", kr: "민수하" },
+    name: { ja: "ミン・スゥーハ", en: "Min Suha", ko: "민수하" },
     anniversaries: { birthday: "04/03", debut: "2020/01/25" },
     agency: "nijisanji",
     region: "kr",
@@ -1737,7 +1737,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "shin-yuya",
-    name: { ja: "シン・ユヤ", en: "Shin Yuya", kr: "신유야" },
+    name: { ja: "シン・ユヤ", en: "Shin Yuya", ko: "신유야" },
     anniversaries: { birthday: "07/07", debut: "2020/01/23" },
     agency: "nijisanji",
     region: "kr",
@@ -1765,7 +1765,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "wiffy",
-    name: { ja: "ウィフィ", en: "Wiffy", kr: "위피" },
+    name: { ja: "ウィフィ", en: "Wiffy", ko: "위피" },
     anniversaries: { birthday: "11/11", debut: "2020/01/23" },
     agency: "nijisanji",
     region: "kr",
@@ -1779,7 +1779,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "yu-ruri",
-    name: { ja: "ユ・ルリ", en: "Yu Ruri", kr: "유루리" },
+    name: { ja: "ユ・ルリ", en: "Yu Ruri", ko: "유루리" },
     anniversaries: { birthday: "11/11", debut: "2020/01/23" },
     agency: "nijisanji",
     region: "kr",
@@ -1793,7 +1793,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "saya",
-    name: { ja: "サヤ", en: "Saya", cn: "沙夜" },
+    name: { ja: "サヤ", en: "Saya", zh: "沙夜" },
     anniversaries: { birthday: "03/07", debut: "2020/01/21" },
     agency: "nijisanji",
     region: "cn",
@@ -1807,7 +1807,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "seiya",
-    name: { ja: "セイヤ", en: "Seiya", cn: "星也" },
+    name: { ja: "セイヤ", en: "Seiya", zh: "星也" },
     anniversaries: { birthday: "12/23", debut: "2020/01/21" },
     agency: "nijisanji",
     region: "cn",
@@ -1817,7 +1817,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "yukie",
-    name: { ja: "ユキエ", en: "Yukie", cn: "雪绘" },
+    name: { ja: "ユキエ", en: "Yukie", zh: "雪绘" },
     anniversaries: { birthday: "05/27", debut: "2020/01/21" },
     agency: "nijisanji",
     region: "cn",
@@ -1922,7 +1922,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "aza",
-    name: { ja: "アザ", en: "Aza", cn: "阿萨" },
+    name: { ja: "アザ", en: "Aza", zh: "阿萨" },
     anniversaries: { birthday: "08/18", debut: "2019/12/01" },
     agency: "nijisanji",
     region: "cn",
@@ -1936,7 +1936,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "roi-eineberg",
-    name: { ja: "ロイ", en: "Roi", cn: "罗伊" },
+    name: { ja: "ロイ", en: "Roi", zh: "罗伊" },
     anniversaries: { birthday: "07/25", debut: "2019/12/01" },
     agency: "nijisanji",
     region: "cn",
@@ -1949,7 +1949,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "tabibito",
-    name: { ja: "タビビト", en: "Tabibito", cn: "度人" },
+    name: { ja: "タビビト", en: "Tabibito", zh: "度人" },
     anniversaries: { birthday: "06/10", debut: "2019/12/01" },
     agency: "nijisanji",
     region: "cn",
@@ -1962,7 +1962,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "yagi-michiyuki",
-    name: { ja: "ヤギ・ミチユキ", en: "Yagi", cn: "八木迪之" },
+    name: { ja: "ヤギ・ミチユキ", en: "Yagi", zh: "八木迪之" },
     anniversaries: { birthday: "07/12", debut: "2019/12/01" },
     agency: "nijisanji",
     region: "cn",
@@ -2011,7 +2011,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "hakuren",
-    name: { ja: "ハクレン", en: "Hakuren", kr: "백연" },
+    name: { ja: "ハクレン", en: "Hakuren", ko: "백연" },
     anniversaries: { birthday: null, debut: "2019/11/22" },
     agency: "nijisanji",
     region: "kr",
@@ -2025,7 +2025,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "han-chiho",
-    name: { ja: "ハン・チホ", en: "Han Chiho", kr: "한치호" },
+    name: { ja: "ハン・チホ", en: "Han Chiho", ko: "한치호" },
     anniversaries: { birthday: "02/19", debut: "2019/11/15" },
     agency: "nijisanji",
     region: "kr",
@@ -2039,7 +2039,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "hoshimi",
-    name: { ja: "ホシミ", en: "Hoshimi", cn: "星弥" },
+    name: { ja: "ホシミ", en: "Hoshimi", zh: "星弥" },
     anniversaries: { birthday: "05/15", debut: "2019/11/09" },
     agency: "nijisanji",
     region: "cn",
@@ -2053,7 +2053,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "mahiru",
-    name: { ja: "マヒル", en: "Mahiru", cn: "真緋瑠" },
+    name: { ja: "マヒル", en: "Mahiru", zh: "真緋瑠" },
     anniversaries: { birthday: "08/17", debut: "2019/11/09" },
     agency: "nijisanji",
     region: "cn",
@@ -2066,7 +2066,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "miki",
-    name: { ja: "ミキ", en: "Miki", cn: "弥希" },
+    name: { ja: "ミキ", en: "Miki", zh: "弥希" },
     anniversaries: { birthday: "04/11", debut: "2019/11/09" },
     agency: "nijisanji",
     region: "cn",
@@ -2119,7 +2119,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "hanon",
-    name: { ja: "ハノン", en: "Hanon", cn: "羽音" },
+    name: { ja: "ハノン", en: "Hanon", zh: "羽音" },
     anniversaries: { birthday: null, debut: "2019/11/01" },
     agency: "nijisanji",
     region: "cn",
@@ -2129,7 +2129,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "lorou",
-    name: { ja: "ローロー", en: "Lorou", kr: "로로" },
+    name: { ja: "ローロー", en: "Lorou", ko: "로로" },
     anniversaries: { birthday: "12/06", debut: "2019/10/28" },
     agency: "nijisanji",
     region: "kr",
@@ -2264,7 +2264,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "muri",
-    name: { ja: "ムリ", en: "Muri", cn: "无理" },
+    name: { ja: "ムリ", en: "Muri", zh: "无理" },
     anniversaries: { birthday: "06/21", debut: "2019/08/14" },
     agency: "nijisanji",
     region: "cn",
@@ -2422,7 +2422,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "kouichi",
-    name: { ja: "コウイチ", en: "Kouichi", cn: "光一" },
+    name: { ja: "コウイチ", en: "Kouichi", zh: "光一" },
     anniversaries: { birthday: "02/22", debut: "2019/06/15" },
     agency: "nijisanji",
     region: "cn",
@@ -2435,7 +2435,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "nanami",
-    name: { ja: "ナナミ", en: "Nanami", cn: "七海" },
+    name: { ja: "ナナミ", en: "Nanami", zh: "七海" },
     anniversaries: { birthday: "07/15", debut: "2019/06/13" },
     agency: "nijisanji",
     region: "cn",
@@ -2475,7 +2475,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "ruki",
-    name: { ja: "ルキ", en: "Ruki", cn: "琉绮" },
+    name: { ja: "ルキ", en: "Ruki", zh: "琉绮" },
     anniversaries: { birthday: "12/12", debut: "2019/05/20" },
     agency: "nijisanji",
     region: "cn",
@@ -2485,7 +2485,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "eine",
-    name: { ja: "アイネ", en: "Eine", cn: "艾因" },
+    name: { ja: "アイネ", en: "Eine", zh: "艾因" },
     anniversaries: { birthday: "02/02", debut: "2019/05/15" },
     agency: "nijisanji",
     region: "cn",
@@ -2495,7 +2495,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "kaen",
-    name: { ja: "カエン", en: "Kaen", kr: "카엔" },
+    name: { ja: "カエン", en: "Kaen", ko: "카엔" },
     anniversaries: { birthday: null, debut: "2019/05/13" },
     agency: "nijisanji",
     region: "kr",
@@ -2704,7 +2704,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "moarin",
-    name: { ja: "モアリン", en: "Moarin", kr: "모아린" },
+    name: { ja: "モアリン", en: "Moarin", ko: "모아린" },
     anniversaries: { birthday: "11/08", debut: "2018/11/07" },
     agency: "nijisanji",
     region: "kr",
@@ -3504,7 +3504,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   },
   {
     id: "remi",
-    name: { ja: "レミ", en: "Remi", cn: "蕾米" },
+    name: { ja: "レミ", en: "Remi", zh: "蕾米" },
     anniversaries: { birthday: "10/06", debut: "2021/03/13" },
     agency: "nijisanji",
     region: "cn",

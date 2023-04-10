@@ -1,5 +1,4 @@
 import { SupportedLocales } from "@/data/locales";
-import { StrictOmit } from "ts-essentials";
 
 type AnniversaryYMDDate =
   `${number}${number}${number}${number}/${number}${number}/${number}${number}`;
@@ -91,7 +90,7 @@ interface ENJPStreamer extends BaseStreamer {
  * Represents a streamer whose name is also available in Korean.
  */
 interface KRStreamer extends BaseStreamer {
-  name: Record<SupportedLocales | "kr", string>;
+  name: Record<SupportedLocales | "ko", string>;
   region: Extract<StreamerRegion, "kr">;
 }
 
@@ -99,7 +98,7 @@ interface KRStreamer extends BaseStreamer {
  * Represents a streamer whose name is also available in Chinese.
  */
 interface CNStreamer extends BaseStreamer {
-  name: Record<SupportedLocales | "cn", string>;
+  name: Record<SupportedLocales | "zh", string>;
   region: Extract<StreamerRegion, "cn">;
 }
 
