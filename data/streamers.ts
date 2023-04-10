@@ -18,7 +18,7 @@ export const Streamers: DeepReadonly<Streamer[]> = [
   {
     id: "kuramochi-meruto",
     name: { ja: "倉持めると", en: "Kuramochi Meruto" },
-    anniversaries: { birthday: "04/14", debut: "2023/01/20" },
+    anniversaries: { birthday: "05/19", debut: "2023/01/20" },
     agency: "nijisanji",
     region: "jp",
     imageUrl: "KuramochiMeruto.webp",
