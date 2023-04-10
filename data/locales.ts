@@ -20,6 +20,7 @@ export enum Translations {
   about = "about",
   openMainMenu = "openMainMenu",
   search = "search",
+  searchStreamers = "searchStreamers",
   japan = "japan",
   english = "english",
   indonesia = "indonesia",

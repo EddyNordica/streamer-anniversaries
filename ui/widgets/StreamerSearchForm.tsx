@@ -105,7 +105,7 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
 
         {/* Search Box */}
         <SearchBox
-          label="Search for streamers by name."
+          label={t(Translations.searchStreamers)}
           onSearch={(query) => props.setSearchQuery(query)}
         />
       </div>
