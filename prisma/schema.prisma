@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "cockroachdb"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+enum Agency {
+  HOLOLIVE
+  INDEPENDENT
+  NIJISANJI
+}
+
+enum Region {
+  CN // China
+  EN // English-speaking regions
+  ID // Indonesia
+  IN // India
+  JP // Japan
+  KR // Korea
+}
+
+enum Status {
+  ACTIVE
+  GRADUATED
+  TERMINATED
+}
+
+enum Language {
+  EN // English
+  JA // Japanese
+  KO // Korean
+  ZH // Chinese
+}
+
+model Streamer {
+  id             String         @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name           StreamerName[]
+  agency         Agency
+  region         Region
+  status         Status
+  anniv_birthday DateTime       @db.Date
+  anniv_debut    DateTime       @db.Date
+  links          String[]
+}
+
+model StreamerName {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name       String
+  language   Language
+  Streamer   Streamer @relation(fields: [streamerId], references: [id])
+  streamerId String   @db.Uuid
+}
