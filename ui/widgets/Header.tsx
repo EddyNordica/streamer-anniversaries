@@ -43,7 +43,7 @@ export const Header = () => {
   const locale = useSupportedLocale();
 
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure as="header" className="bg-white shadow">
       {({ open }) => (
         <>
           <PageContainer>
@@ -51,10 +51,7 @@ export const Header = () => {
               <div className="flex h-16 justify-between">
                 <div className="flex">
                   <div className="flex flex-shrink-0 items-center">
-                    <Link
-                      href="/"
-                      title={t(Translations.streamerAnniversaryTracker) ?? ""}
-                    >
+                    <Link href="/" title={t(Translations.siteNameText) ?? ""}>
                       <CalendarDaysIcon className="h-8 w-8 text-indigo-700" />
                     </Link>
                   </div>

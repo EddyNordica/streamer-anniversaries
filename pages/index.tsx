@@ -22,8 +22,7 @@ import {
 } from "@/ui/widgets/StreamerSearchForm";
 import { StreamerListRenderer } from "@/ui/widgets/StreamerListRenderer";
 import { removeTime } from "@/lib/date";
-
-// const inter = Inter({ subsets: ['latin'] })
+import { SegmentedText } from "@/ui/components/SegmentedText";
 
 interface HomeProps {
   streamers: DeepReadonly<Streamer[]>;
@@ -49,12 +48,20 @@ export default function Home(props: HomeProps) {
   return (
     <main>
       <h1 className="text-2xl sm:text-4xl font-semibold leading-7 text-gray-900">
-        {t(Translations.streamerAnniversaryTracker)}
+        {
+          <Trans
+            i18nKey={Translations.siteNameHeading}
+            components={{
+              span: <SegmentedText />,
+            }}
+          />
+        }
       </h1>
 
       <StreamerSearchForm
         setAnniversary={setAnniversary}
         setRegions={setRegions}
+        hideGraduatedDefault={hideGraduated}
         setHideGraduated={setHideGraduated}
         setSearchQuery={setSearchQuery}
       />

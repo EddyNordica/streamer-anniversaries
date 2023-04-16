@@ -3,7 +3,8 @@ export const Locales = ["ja", "en"] as const;
 export type SupportedLocales = (typeof Locales)[number];
 
 export enum Translations {
-  streamerAnniversaryTracker = "streamerAnniversaryTracker",
+  siteNameHeading = "siteNameHeading",
+  siteNameText = "siteNameText",
   agency = "agency",
   nijisanji = "nijisanji",
   hololive = "hololive",
@@ -36,16 +37,13 @@ export enum Translations {
   noSelection = "noSelection",
   aboutThisSite = "aboutThisSite",
   terms = "terms",
-  privacyPolicy = "privacyPolicy",
   builtBy = "builtBy",
   sourceCode = "sourceCode",
-  aboutThisSiteTextOne = "aboutThisSiteTextOne",
-  aboutThisSiteTextTwo = "aboutThisSiteTextTwo",
-  aboutThisSiteTextThree = "aboutThisSiteTextThree",
+  aboutThisSiteText = "aboutThisSiteText",
   termsText = "termsText",
-  privacyPolicyText = "privacyPolicyText",
   everyday = "everyday",
   hideGraduated = "hideGraduated",
   hideGraduatedScreenReader = "hideGraduatedScreenReader",
   graduated = "graduated",
+  showFilters = "showFilters",
 }

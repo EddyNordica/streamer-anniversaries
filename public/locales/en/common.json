@@ -1,5 +1,6 @@
 {
-  "streamerAnniversaryTracker": "VTuber Anniversary Tracker",
+  "siteNameHeading": "VTuber Anniversary Tracker",
+  "siteNameText": "VTuber Anniversary Tracker",
   "agency": "Agency",
   "nijisanji": "NIJISANJI",
   "hololive": "Hololive",
@@ -31,17 +32,14 @@
   "noSelection": "No selection",
   "searchStreamers": "Search for streamers by name.",
   "aboutThisSite": "About This Site",
-  "aboutThisSiteTextOne": "I saw this <a>tweet</a> by Shizurin and thought I might just create one for fun. ",
-  "aboutThisSiteTextTwo": "I'm just a fan. I'm not affiliated with Any Color or Nijisanji. The images of VTubers on this website were taken from Any Color's official website.",
-  "aboutThisSiteTextThree": "The information on this website is something I gathered from the Internet. I put my best effort to make sure they are correct, but please beware that they may be outdated, or wrong. If you spot any mistakes, please DM me at Twitter.",
+  "aboutThisSiteText": "This website displays and the number of days until the various anniversaries (such as birthday, debut, etc.) of VTubers (mainly Nijisanji). I saw this <a>tweet</a> by Shizurin and thought I might create one for fun.",
   "terms": "Terms",
   "termsText": "I'm not responsible or liable for any damages, harms or inconvenience, losses, expenses, etc. whatsoever. Give me a break.",
-  "privacyPolicy": "Privacy Policy",
-  "privacyPolicyText": "There are some settings stored locally, but it's not anything I can use to identify individuals.",
   "builtBy": "Built by",
   "sourceCode": "Source Code",
   "everyday": "Everyday!",
   "graduated": "Graduated",
   "hideGraduated": "Hide Graduated<i></i>Streamers",
-  "hideGraduatedScreenReader": "Hide Graduated< Streamers"
+  "hideGraduatedScreenReader": "Hide Graduated< Streamers",
+  "showFilters": "Show filters"
 }
