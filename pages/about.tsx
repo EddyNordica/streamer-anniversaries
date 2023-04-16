@@ -4,6 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Trans, useTranslation } from "next-i18next";
 import { Translations } from "@/data/locales";
 import { isNonEmptyString } from "@/utils/string";
+import { SegmentedText } from "@/ui/components/SegmentedText";
 
 export default function About() {
   const { t } = useTranslation();
@@ -11,7 +12,14 @@ export default function About() {
   return (
     <main>
       <h1 className="text-2xl sm:text-4xl font-semibold leading-7 text-gray-900 mb-6">
-        {t(Translations.streamerAnniversaryTracker)}
+        {
+          <Trans
+            i18nKey={Translations.streamerAnniversaryTracker}
+            components={{
+              span: <SegmentedText />,
+            }}
+          />
+        }
       </h1>
 
       <div className="space-y-12">
