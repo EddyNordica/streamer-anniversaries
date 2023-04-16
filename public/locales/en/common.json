@@ -39,5 +39,6 @@
   "everyday": "Everyday!",
   "graduated": "Graduated",
   "hideGraduated": "Hide Graduated<i></i>Streamers",
-  "hideGraduatedScreenReader": "Hide Graduated< Streamers"
+  "hideGraduatedScreenReader": "Hide Graduated< Streamers",
+  "showFilters": "Show filters"
 }

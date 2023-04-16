@@ -44,4 +44,5 @@ export enum Translations {
   hideGraduated = "hideGraduated",
   hideGraduatedScreenReader = "hideGraduatedScreenReader",
   graduated = "graduated",
+  showFilters = "showFilters",
 }
