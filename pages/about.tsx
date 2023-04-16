@@ -21,7 +21,7 @@ export default function About() {
           </h2>
           <p className="text-base leading-7 text-gray-700 mb-4">
             <Trans
-              i18nKey={Translations.aboutThisSiteTextOne}
+              i18nKey={Translations.aboutThisSiteText}
               components={{
                 a: (
                   <a
@@ -32,12 +32,6 @@ export default function About() {
                 ),
               }}
             />
-          </p>
-          <p className="text-base leading-7 text-gray-700 mb-4">
-            {t(Translations.aboutThisSiteTextTwo)}
-          </p>
-          <p className="text-base leading-7 text-gray-700 mb-4">
-            {t(Translations.aboutThisSiteTextThree)}
           </p>
           <ul role="list">
             <li>
@@ -73,12 +67,6 @@ export default function About() {
             {t(Translations.terms)}
           </h2>
           <p>{t(Translations.termsText)}</p>
-        </div>
-        <div>
-          <h2 className="mt-2 text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-            {t(Translations.privacyPolicy)}
-          </h2>
-          <p>{t(Translations.privacyPolicyText)}</p>
         </div>
       </div>
     </main>
