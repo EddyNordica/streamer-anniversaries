@@ -43,7 +43,7 @@ export const Header = () => {
   const locale = useSupportedLocale();
 
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure as="header" className="bg-white shadow">
       {({ open }) => (
         <>
           <PageContainer>
