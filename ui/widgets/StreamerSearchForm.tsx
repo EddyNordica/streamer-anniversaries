@@ -97,6 +97,7 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
                   name="hideGraduated"
                   label={t(Translations.hideGraduatedScreenReader)}
                   onToggled={props.setHideGraduated}
+                  defaultChecked
                 />
               </div>
             </div>

@@ -5,10 +5,11 @@ export interface ToggleProps {
   name: string;
   label: string;
   onToggled: (value: boolean) => void;
+  defaultChecked?: boolean;
 }
 
 export const Toggle = (props: ToggleProps) => {
-  const [enabled, setEnabled] = React.useState(false);
+  const [enabled, setEnabled] = React.useState(props.defaultChecked ?? false);
 
   return (
     <Switch
