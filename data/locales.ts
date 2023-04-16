@@ -3,7 +3,7 @@ export const Locales = ["ja", "en"] as const;
 export type SupportedLocales = (typeof Locales)[number];
 
 export enum Translations {
-  streamerAnniversaryTracker = "streamerAnniversaryTracker",
+  siteName = "siteName",
   agency = "agency",
   nijisanji = "nijisanji",
   hololive = "hololive",

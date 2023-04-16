@@ -50,7 +50,7 @@ export default function Home(props: HomeProps) {
       <h1 className="text-2xl sm:text-4xl font-semibold leading-7 text-gray-900">
         {
           <Trans
-            i18nKey={Translations.streamerAnniversaryTracker}
+            i18nKey={Translations.siteName}
             components={{
               span: <SegmentedText />,
             }}

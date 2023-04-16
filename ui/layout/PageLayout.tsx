@@ -11,7 +11,7 @@ export const PageLayout = (props: React.PropsWithChildren) => {
   return (
     <>
       <Head>
-        <title>{t(Translations.streamerAnniversaryTracker)}</title>
+        <title>{t(Translations.siteName)}</title>
       </Head>
       <Header />
       <div className="bg-gray-100">
