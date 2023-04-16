@@ -11,7 +11,7 @@ export const PageLayout = (props: React.PropsWithChildren) => {
   return (
     <>
       <Head>
-        <title>{t(Translations.siteName)}</title>
+        <title>{t(Translations.siteNameText)}</title>
       </Head>
       <Header />
       <div className="bg-gray-100">
