@@ -21,6 +21,7 @@ import { Toggle } from "@/ui/components/Toggle";
 export interface StreamerSearchFormProps {
   setAnniversary: (anniversary: StreamerAnniversary) => void;
   setRegions: (regions: StreamerRegion[]) => void;
+  hideGraduatedDefault: boolean;
   setHideGraduated: (hide: boolean) => void;
   setSearchQuery: (query: string) => void;
 }
@@ -112,7 +113,7 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
                       name="hideGraduated"
                       label={t(Translations.hideGraduatedScreenReader)}
                       onToggled={props.setHideGraduated}
-                      defaultChecked
+                      defaultChecked={props.hideGraduatedDefault}
                     />
                   </div>
                 </div>
@@ -146,7 +147,7 @@ export const useStreamerSearchForm = (): [
 ] => {
   const anniversaryState = React.useState<StreamerAnniversary>("birthday");
   const regionState = React.useState<StreamerRegion[]>([]);
-  const hideGraduatedState = React.useState(false);
+  const hideGraduatedState = React.useState(true);
   const searchQueryState = React.useState<string>();
 
   return [anniversaryState, regionState, hideGraduatedState, searchQueryState];

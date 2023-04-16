@@ -61,6 +61,7 @@ export default function Home(props: HomeProps) {
       <StreamerSearchForm
         setAnniversary={setAnniversary}
         setRegions={setRegions}
+        hideGraduatedDefault={hideGraduated}
         setHideGraduated={setHideGraduated}
         setSearchQuery={setSearchQuery}
       />
