@@ -20,7 +20,10 @@ import {
   StreamerSearchForm,
   useStreamerSearchForm,
 } from "@/ui/widgets/StreamerSearchForm";
-import { StreamerListRenderer } from "@/ui/widgets/StreamerListRenderer";
+import {
+  StreamerListRenderer,
+  getAnniversaryTitle,
+} from "@/ui/widgets/StreamerListRenderer";
 import { removeTime } from "@/lib/date";
 import { SegmentedText } from "@/ui/components/SegmentedText";
 
@@ -81,19 +84,36 @@ export default function Home(props: HomeProps) {
           </div>
 
           <StreamerListRenderer
-            title={t(Translations.today)}
+            title={
+              <Trans
+                i18nKey={Translations.today}
+                values={{ anniversary: t(getAnniversaryTitle(anniversary)) }}
+              />
+            }
+            titleText={t(Translations.today, {
+              anniversary: t(getAnniversaryTitle(anniversary)),
+            })}
             streamers={streamers.today}
             anniversary={anniversary}
           />
 
           <StreamerListRenderer
-            title={t(Translations.upcoming)}
+            title={
+              <Trans
+                i18nKey={Translations.upcoming}
+                values={{ anniversary: t(getAnniversaryTitle(anniversary)) }}
+              />
+            }
+            titleText={t(Translations.upcoming, {
+              anniversary: t(getAnniversaryTitle(anniversary)),
+            })}
             streamers={streamers.upcoming}
             anniversary={anniversary}
           />
 
           <StreamerListRenderer
             title={t(Translations.unknown)}
+            titleText={t(Translations.unknown)}
             streamers={streamers.unknown}
             anniversary={anniversary}
           />

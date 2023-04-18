@@ -13,6 +13,8 @@ export enum Translations {
   date = "date",
   birthday = "birthday",
   debut = "debut",
+  birthdayTitle = "birthdayTitle",
+  debutTitle = "debutTitle",
   today = "today",
   upcoming = "upcoming",
   unknown = "unknown",
