@@ -47,7 +47,7 @@ export const Header = () => {
       {({ open }) => (
         <>
           <PageContainer>
-            <nav className="max-w-7xl">
+            <nav>
               <div className="flex h-16 justify-between">
                 <div className="flex">
                   <div className="flex flex-shrink-0 items-center">
