@@ -15,8 +15,8 @@ export interface MultiSelectProps<T> {
   name: string;
   label: string;
   items: SelectItem<T>[];
-  onSelected: (selection: T[]) => void;
   defaultItemIds?: string[];
+  onSelected: (selection: T[]) => void;
   getButtonText?: (selectedItems: SelectItem<T>[]) => string;
 }
 
@@ -32,7 +32,9 @@ export const MultiSelect = <T,>(props: MultiSelectProps<T>) => {
   const [selectedItems, setSelectedItems] = useSelectedItems(
     props.items,
     props.items.filter(
-      (item) => props.defaultItemIds != null && item.id in props.defaultItemIds
+      (item) =>
+        props.defaultItemIds != null &&
+        props.defaultItemIds.indexOf(item.id) >= 0
     )
   );
 

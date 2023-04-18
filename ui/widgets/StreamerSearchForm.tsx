@@ -15,14 +15,17 @@ import {
 import { getAnniversaryName, getRegionName } from "@/lib/streamers";
 import { SearchBox } from "@/ui/components/SearchBox";
 import { Select, SelectItem } from "@/ui/components/Select/Select";
-import { MultiSelect } from "@/ui/components/Select/MulitSelect";
+import { MultiSelect } from "@/ui/components/Select/MultiSelect";
 import { Toggle } from "@/ui/components/Toggle";
 
 export interface StreamerSearchFormProps {
+  anniversary: StreamerAnniversary;
   setAnniversary: (anniversary: StreamerAnniversary) => void;
+  regions: StreamerRegion[];
   setRegions: (regions: StreamerRegion[]) => void;
-  hideGraduatedDefault: boolean;
+  hideGraduated: boolean;
   setHideGraduated: (hide: boolean) => void;
+  searchQuery: string | undefined;
   setSearchQuery: (query: string) => void;
 }
 
@@ -71,6 +74,9 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
                     name="anniversary"
                     label={t(Translations.anniversary)}
                     items={anniversaries}
+                    defaultItem={anniversaries.find(
+                      (anniversary) => anniversary.value === props.anniversary
+                    )}
                     onSelected={props.setAnniversary}
                   />
                 </div>
@@ -83,6 +89,7 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
                     name="regions"
                     label={t(Translations.regions)}
                     items={regions}
+                    defaultItemIds={props.regions}
                     onSelected={props.setRegions}
                     getButtonText={getRegionsButtonText}
                   />
@@ -113,7 +120,7 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
                       name="hideGraduated"
                       label={t(Translations.hideGraduatedScreenReader)}
                       onToggled={props.setHideGraduated}
-                      defaultChecked={props.hideGraduatedDefault}
+                      defaultChecked={props.hideGraduated}
                     />
                   </div>
                 </div>
@@ -123,6 +130,7 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
             {/* Search Box */}
             <SearchBox
               label={t(Translations.searchStreamers)}
+              defaultValue={props.searchQuery}
               onSearch={(query) => props.setSearchQuery(query)}
             />
           </div>

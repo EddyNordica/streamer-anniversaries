@@ -12,6 +12,7 @@ export interface SelectProps<T> {
   name: string;
   label: string;
   items: SelectItem<T>[];
+  defaultItem?: SelectItem<T>;
   onSelected: (selection: T) => void;
   defaultItemId?: string;
 }
@@ -23,7 +24,8 @@ export const Select = <T,>(props: SelectProps<T>) => {
 
   const [selectedItem, setSelectedItem] = useSelectedItem(
     props.items,
-    props.items.find((item) => item.id === props.defaultItemId) ??
+    props.defaultItem ??
+      props.items.find((item) => item.id === props.defaultItemId) ??
       props.items[0]
   );
 
