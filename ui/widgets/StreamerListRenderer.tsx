@@ -19,7 +19,7 @@ export const StreamerListRenderer = (props: StreamerListRendererProps) => {
   return (
     <>
       {props.streamers.length > 0 && locale != null && (
-        <StreamerList title={props.title}>
+        <StreamerList title={props.title} count={props.streamers.length}>
           {props.streamers.map(({ streamer, days, age }) => {
             return (
               <StreamerListItem

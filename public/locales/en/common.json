@@ -44,5 +44,7 @@
   "hideGraduated": "Hide Graduated<i></i>Streamers",
   "hideGraduatedScreenReader": "Hide Graduated< Streamers",
   "showFilters": "Show filters",
-  "localeDropdown": "Select a language. Current language:"
+  "localeDropdown": "Select a language. Current language:",
+  "numItems": "Number of Items: {{count}}",
+  "eddyTwitter": "Eddy's Twitter"
 }

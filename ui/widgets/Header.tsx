@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
-import { getMover, getTabsterAttribute, Types } from "tabster";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { CalendarDaysIcon } from "@heroicons/react/20/solid";
@@ -13,7 +12,6 @@ import {
 import { PageContainer } from "@/ui/layout/PageContainer";
 import { Locales, Translations } from "@/data/locales";
 import { getLanguageName, useSupportedLocale } from "@/lib/locale";
-import { useTabster } from "@/lib/tabster";
 
 const languageOptions: LocaleDropdownMenuItem[] = Locales.map((locale) => ({
   id: locale,
@@ -45,29 +43,13 @@ export const Header = () => {
   const router = useRouter();
   const locale = useSupportedLocale();
 
-  const tabster = useTabster();
-  React.useEffect(() => {
-    if (tabster != null) {
-      getMover(tabster);
-    }
-  }, [tabster]);
-
   return (
     <header>
-      <Disclosure
-        as="nav"
-        className="bg-white shadow"
-        {...getTabsterAttribute({ root: {} })}
-      >
+      <Disclosure as="nav" className="bg-white shadow">
         {({ open }) => (
           <>
             <PageContainer>
-              <div
-                className="flex h-16 justify-between"
-                {...getTabsterAttribute({
-                  mover: { direction: Types.MoverDirections.Horizontal },
-                })}
-              >
+              <div className="flex h-16 justify-between">
                 <div className="flex">
                   <div className="flex flex-shrink-0 items-center">
                     <Link href="/" title={t(Translations.siteNameText) ?? ""}>

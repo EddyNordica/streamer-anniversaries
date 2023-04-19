@@ -49,4 +49,6 @@ export enum Translations {
   graduated = "graduated",
   showFilters = "showFilters",
   localeDropdown = "localeDropdown",
+  numItems = "numItems",
+  eddyTwitter = "eddyTwitter",
 }

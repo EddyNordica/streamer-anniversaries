@@ -1,7 +1,10 @@
+import { Translations } from "@/data/locales";
 import { PageContainer } from "@/ui/layout/PageContainer";
 import { HeartIcon } from "@heroicons/react/20/solid";
+import { useTranslation } from "next-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-gray-900">
       <PageContainer>
@@ -15,7 +18,7 @@ export const Footer = () => {
               <a
                 href="https://twitter.com/Eddy_Nordica"
                 target="_blank"
-                aria-label="Made with Love by Eddy"
+                aria-label={t(Translations.eddyTwitter) ?? undefined}
               >
                 Eddy
               </a>
