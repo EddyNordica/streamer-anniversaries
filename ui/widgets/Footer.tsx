@@ -12,7 +12,11 @@ export const Footer = () => {
               <HeartIcon aria-label="love" className="inline h-4 w-4" /> by{" "}
             </span>
             <span className="text-gray-300 hover:underline">
-              <a href="https://twitter.com/Eddy_Nordica" target="_blank">
+              <a
+                href="https://twitter.com/Eddy_Nordica"
+                target="_blank"
+                aria-label="Made with Love by Eddy"
+              >
                 Eddy
               </a>
             </span>

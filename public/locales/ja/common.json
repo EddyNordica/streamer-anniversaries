@@ -43,5 +43,6 @@
   "graduated": "卒業生",
   "hideGraduated": "卒業した配信者<i></i>を非表示",
   "hideGraduatedScreenReader": "卒業した配信者を非表示",
-  "showFilters": "フィルターの表示"
+  "showFilters": "フィルターの表示",
+  "localeDropdown": "言語の選択。現在の言語:"
 }

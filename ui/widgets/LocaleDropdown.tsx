@@ -1,10 +1,11 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
-import { SupportedLocales } from "@/data/locales";
+import { SupportedLocales, Translations } from "@/data/locales";
 import { getLanguageName } from "@/lib/locale";
 
 export interface LocaleDropdownMenuItem {
@@ -19,13 +20,16 @@ export interface LocaleDropdownProps {
 }
 
 export const LocaleDropdown = (props: LocaleDropdownProps) => {
+  const { t } = useTranslation();
   const router = useRouter();
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button
           className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-          aria-label={getLanguageName(props.selectedLocale)}
+          aria-label={`${t(Translations.localeDropdown)}, ${getLanguageName(
+            props.selectedLocale
+          )}`}
         >
           <GlobeAltIcon className="mr-1 h-5 w-5" />
           {props.selectedLocale.toUpperCase()}

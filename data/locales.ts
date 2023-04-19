@@ -48,4 +48,5 @@ export enum Translations {
   hideGraduatedScreenReader = "hideGraduatedScreenReader",
   graduated = "graduated",
   showFilters = "showFilters",
+  localeDropdown = "localeDropdown",
 }
