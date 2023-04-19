@@ -8,8 +8,7 @@ import { useSupportedLocale } from "@/lib/locale";
 import { Translations } from "@/data/locales";
 
 export interface StreamerListRendererProps {
-  title: React.ReactNode;
-  titleText: string;
+  title: string;
   streamers: DeepReadonly<StreamerData[]>;
   anniversary: StreamerAnniversary;
 }
@@ -20,7 +19,7 @@ export const StreamerListRenderer = (props: StreamerListRendererProps) => {
   return (
     <>
       {props.streamers.length > 0 && locale != null && (
-        <StreamerList title={props.title} titleText={props.titleText}>
+        <StreamerList title={props.title}>
           {props.streamers.map(({ streamer, days, age }) => {
             return (
               <StreamerListItem

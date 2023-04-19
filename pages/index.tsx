@@ -87,13 +87,7 @@ export default function Home(props: HomeProps) {
           </div>
 
           <StreamerListRenderer
-            title={
-              <Trans
-                i18nKey={Translations.today}
-                values={{ anniversary: t(getAnniversaryTitle(anniversary)) }}
-              />
-            }
-            titleText={t(Translations.today, {
+            title={t(Translations.today, {
               anniversary: t(getAnniversaryTitle(anniversary)),
             })}
             streamers={streamers.today}
@@ -101,13 +95,7 @@ export default function Home(props: HomeProps) {
           />
 
           <StreamerListRenderer
-            title={
-              <Trans
-                i18nKey={Translations.upcoming}
-                values={{ anniversary: t(getAnniversaryTitle(anniversary)) }}
-              />
-            }
-            titleText={t(Translations.upcoming, {
+            title={t(Translations.upcoming, {
               anniversary: t(getAnniversaryTitle(anniversary)),
             })}
             streamers={streamers.upcoming}
@@ -116,7 +104,6 @@ export default function Home(props: HomeProps) {
 
           <StreamerListRenderer
             title={t(Translations.unknown)}
-            titleText={t(Translations.unknown)}
             streamers={streamers.unknown}
             anniversary={anniversary}
           />
