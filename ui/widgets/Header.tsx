@@ -1,6 +1,8 @@
+import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import { getMover, getTabsterAttribute, Types } from "tabster";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { CalendarDaysIcon } from "@heroicons/react/20/solid";
@@ -11,6 +13,7 @@ import {
 import { PageContainer } from "@/ui/layout/PageContainer";
 import { Locales, Translations } from "@/data/locales";
 import { getLanguageName, useSupportedLocale } from "@/lib/locale";
+import { useTabster } from "@/lib/tabster";
 
 const languageOptions: LocaleDropdownMenuItem[] = Locales.map((locale) => ({
   id: locale,
@@ -42,13 +45,29 @@ export const Header = () => {
   const router = useRouter();
   const locale = useSupportedLocale();
 
+  const tabster = useTabster();
+  React.useEffect(() => {
+    if (tabster != null) {
+      getMover(tabster);
+    }
+  }, [tabster]);
+
   return (
-    <Disclosure as="header" className="bg-white shadow">
-      {({ open }) => (
-        <>
-          <PageContainer>
-            <nav>
-              <div className="flex h-16 justify-between">
+    <header>
+      <Disclosure
+        as="nav"
+        className="bg-white shadow"
+        {...getTabsterAttribute({ root: {} })}
+      >
+        {({ open }) => (
+          <>
+            <PageContainer>
+              <div
+                className="flex h-16 justify-between"
+                {...getTabsterAttribute({
+                  mover: { direction: Types.MoverDirections.Horizontal },
+                })}
+              >
                 <div className="flex">
                   <div className="flex flex-shrink-0 items-center">
                     <Link href="/" title={t(Translations.siteNameText) ?? ""}>
@@ -99,29 +118,29 @@ export const Header = () => {
                   </Disclosure.Button>
                 </div>
               </div>
-            </nav>
-          </PageContainer>
+            </PageContainer>
 
-          <Disclosure.Panel className="sm:hidden">
-            <nav className="space-y-1 pb-3 pt-2">
-              {navigation.map((navItem) => (
-                <Disclosure.Button
-                  key={navItem.id}
-                  as={Link}
-                  href={navItem.link}
-                  className={`block border-l-4 py-2 pl-3 pr-4 text-base font-medium ${
-                    router.pathname === navItem.link
-                      ? "bg-indigo-50 border-indigo-500 text-indigo-700"
-                      : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
-                  }`}
-                >
-                  {t(navItem.title)}
-                </Disclosure.Button>
-              ))}
-            </nav>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+            <Disclosure.Panel className="sm:hidden">
+              <div className="space-y-1 pb-3 pt-2">
+                {navigation.map((navItem) => (
+                  <Disclosure.Button
+                    key={navItem.id}
+                    as={Link}
+                    href={navItem.link}
+                    className={`block border-l-4 py-2 pl-3 pr-4 text-base font-medium ${
+                      router.pathname === navItem.link
+                        ? "bg-indigo-50 border-indigo-500 text-indigo-700"
+                        : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                    }`}
+                  >
+                    {t(navItem.title)}
+                  </Disclosure.Button>
+                ))}
+              </div>
+            </Disclosure.Panel>
+          </>
+        )}
+      </Disclosure>
+    </header>
   );
 };

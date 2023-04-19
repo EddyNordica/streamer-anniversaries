@@ -46,6 +46,9 @@ dependencies:
   react-i18next:
     specifier: ^12.2.0
     version: 12.2.0(i18next@22.4.14)(react-dom@18.2.0)(react@18.2.0)
+  tabster:
+    specifier: ^4.4.0
+    version: 4.4.0
   tailwindcss:
     specifier: 3.3.1
     version: 3.3.1(postcss@8.4.21)
@@ -2071,6 +2074,10 @@ packages:
       object.assign: 4.1.4
     dev: false
 
+  /keyborg@2.0.0:
+    resolution: {integrity: sha512-RWY8nWrzRkwTQLaKyDtbTu5SOb5L4B20UzAsBHlQDFZqVY/+Mid0bQ7MVTC8vbOTrWY2xkkzj8gZF9Ua7re4xA==}
+    dev: false
+
   /language-subtag-registry@0.3.22:
     resolution: {integrity: sha512-tN0MCzyWnoz/4nHS6uxdlFWoUZT7ABptwKPQ52Ea7URk6vll88bWBVhodtnlfEuCcKWNGoc+uGbw1cwa9IKh/w==}
     dev: false
@@ -2919,6 +2926,13 @@ packages:
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@pkgr/utils': 2.3.1
+      tslib: 2.5.0
+    dev: false
+
+  /tabster@4.4.0:
+    resolution: {integrity: sha512-lhbh4jBOcwN+qGzzyi0+bF1B6Lu/onneSSQN3hep1fvC+O98tiXzQFOvDoDnnMW9tfGoiuvJad5ZnI3AGXMAHw==}
+    dependencies:
+      keyborg: 2.0.0
       tslib: 2.5.0
     dev: false
 

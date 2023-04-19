@@ -29,6 +29,14 @@ export const StreamerListItem = (props: StreamerListItemProps) => {
     <li
       className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow"
       tabIndex={0}
+      // Enable this when needed. This lets tabster treat this list item as a
+      // single entity, so arrow keys will jump to the next list item instead of
+      // going inside a focusable item inside the list item.
+      // {...getTabsterAttribute({
+      //   groupper: {
+      //     tabbability: Types.GroupperTabbabilities.LimitedTrapFocus,
+      //   },
+      // })}
     >
       <StreamerCard {...props} />
     </li>
