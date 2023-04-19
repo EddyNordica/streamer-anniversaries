@@ -84,10 +84,7 @@ const StreamerCard = (props: StreamerListItemProps) => {
           <>
             <dt className="sr-only">{t(Translations.anniversaryAge)}</dt>
             <dd className="text-sm text-gray-500">
-              <Trans
-                i18nKey={Translations.anniversaryAgeUnit}
-                values={{ age: props.age }}
-              />
+              {t(Translations.anniversaryAgeUnit, { age: props.age })}
             </dd>
           </>
         )}

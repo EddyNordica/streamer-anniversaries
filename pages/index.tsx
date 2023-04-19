@@ -75,15 +75,12 @@ export default function Home(props: HomeProps) {
       {streamers != null && (
         <>
           <div className="sr-only" aria-live="polite">
-            <Trans
-              i18nKey={Translations.numberOfResults}
-              values={{
-                count:
-                  streamers.today.length +
-                  streamers.upcoming.length +
-                  streamers.unknown.length,
-              }}
-            />
+            {t(Translations.numberOfResults, {
+              count:
+                streamers.today.length +
+                streamers.upcoming.length +
+                streamers.unknown.length,
+            })}
           </div>
 
           <StreamerListRenderer
