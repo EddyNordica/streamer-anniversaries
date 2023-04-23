@@ -17,6 +17,7 @@ import { SearchBox } from "@/ui/components/SearchBox";
 import { Select, SelectItem } from "@/ui/components/Select/Select";
 import { MultiSelect } from "@/ui/components/Select/MultiSelect";
 import { Toggle } from "@/ui/components/Toggle";
+import { useLocaleSetting, booleanParser } from "@/lib/storage";
 
 export interface StreamerSearchFormProps {
   anniversary: StreamerAnniversary;
@@ -56,11 +57,11 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
     <div className="mt-4">
       <Disclosure>
         <div className="flex justify-end">
-          <Disclosure.Button className="py-2 inline-flex items-center gap-x-2 px-3.5 py-2.5 text-sm font-semibold shadow-sm rounded-md bg-white text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <Disclosure.Button className="inline-flex items-center gap-x-2 px-3.5 py-2.5 text-sm font-semibold shadow-sm rounded-md bg-white text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <AdjustmentsHorizontalIcon
               className="-ml-0.5 h-5 w-5"
               aria-hidden="true"
-            />{" "}
+            />
             {t(Translations.showFilters)}
           </Disclosure.Button>
         </div>
@@ -144,19 +145,55 @@ const getRegionsButtonText = (items: SelectItem<StreamerRegion>[]): string => {
   return items.map((item) => item.value.toUpperCase()).join(", ");
 };
 
-export const useStreamerSearchForm = (): [
-  [
-    StreamerAnniversary,
-    React.Dispatch<React.SetStateAction<StreamerAnniversary>>
-  ],
-  [StreamerRegion[], React.Dispatch<React.SetStateAction<StreamerRegion[]>>],
-  [boolean, React.Dispatch<React.SetStateAction<boolean>>],
-  [string | undefined, React.Dispatch<React.SetStateAction<string | undefined>>]
-] => {
-  const anniversaryState = React.useState<StreamerAnniversary>("birthday");
-  const regionState = React.useState<StreamerRegion[]>([]);
-  const hideGraduatedState = React.useState(true);
+type SearchFormStates = [
+  anniversaryState: [StreamerAnniversary, (value: StreamerAnniversary) => void],
+  regionsState: [StreamerRegion[], (value: StreamerRegion[]) => void],
+  hideGraduatedState: [boolean, (value: boolean) => void],
+  searchQueryState: [string | undefined, (value: string | undefined) => void]
+];
+
+export const useStreamerSearchForm = (): SearchFormStates => {
+  const anniversaryState = useLocaleSetting<StreamerAnniversary>(
+    "filter:anniversary",
+    { defaultValue: "birthday", parser: anniversaryParser }
+  );
+
+  const regionsState = useLocaleSetting<StreamerRegion[]>("filter:regions", {
+    defaultValue: [],
+    parser: regionsParser,
+  });
+
+  const hideGraduatedState = useLocaleSetting<boolean>("filter:hideGraduated", {
+    defaultValue: true,
+    parser: booleanParser,
+  });
+
   const searchQueryState = React.useState<string>();
 
-  return [anniversaryState, regionState, hideGraduatedState, searchQueryState];
+  return [anniversaryState, regionsState, hideGraduatedState, searchQueryState];
+};
+
+const anniversaryParser = (
+  value: string | undefined
+): StreamerAnniversary | undefined => {
+  return Anniversaries.includes(value as StreamerAnniversary)
+    ? (value as StreamerAnniversary)
+    : undefined;
+};
+
+const regionsParser = (
+  value: string | undefined
+): StreamerRegion[] | undefined => {
+  if (value === undefined) {
+    return [];
+  }
+
+  const regions = value.split(",");
+  for (const region of regions) {
+    if (!Regions.includes(region as StreamerRegion)) {
+      return undefined;
+    }
+  }
+
+  return regions as StreamerRegion[];
 };
