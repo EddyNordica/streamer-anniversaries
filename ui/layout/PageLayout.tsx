@@ -9,17 +9,24 @@ import { Translations } from "@/data/locales";
 export const PageLayout = (props: React.PropsWithChildren) => {
   const { t } = useTranslation();
   return (
-    <>
+    <div className="flex flex-col h-full">
       <Head>
         <title>{t(Translations.siteNameText)}</title>
       </Head>
-      <Header />
-      <div className="bg-gray-100">
+
+      <div className="flex-none">
+        <Header />
+      </div>
+
+      <div className="bg-gray-100 flex-1 overflow-y-auto">
         <PageContainer>
           <div className="py-6">{props.children}</div>
         </PageContainer>
       </div>
-      <Footer />
-    </>
+
+      <div className="flex-none">
+        <Footer />
+      </div>
+    </div>
   );
 };
