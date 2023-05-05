@@ -1,5 +1,5 @@
 import { Translations } from "@/data/locales";
-import { PageContainer } from "@/ui/layout/PageContainer";
+import { Container } from "@/ui/layout/Container";
 import { HeartIcon } from "@heroicons/react/20/solid";
 import { useTranslation } from "next-i18next";
 
@@ -7,8 +7,8 @@ export const Footer = () => {
   const { t } = useTranslation();
   return (
     <footer className="bg-gray-900">
-      <PageContainer>
-        <div className="py-2 sm:py-4 flex items-center">
+      <Container>
+        <div className="py-2 sm:py-4 short:py-1 flex items-center">
           <p className="text-center text-xs sm:text-base leading-5 text-gray-400 m-auto">
             <span>
               Made with{" "}
@@ -25,7 +25,7 @@ export const Footer = () => {
             </span>
           </p>
         </div>
-      </PageContainer>
+      </Container>
     </footer>
   );
 };

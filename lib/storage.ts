@@ -67,34 +67,6 @@ const createSessionStorage = (): IStorage<SessionSettingsKey> => {
 const lStorage = createLocalStorage();
 const sStorage = createSessionStorage();
 
-/**
- * Returns a local storage used for this app.
- */
-export const useLocalStorage = (): IStorage<LocalSettingsKey> | undefined => {
-  const [storage, setStorage] = React.useState<IStorage<LocalSettingsKey>>();
-
-  React.useEffect(() => {
-    setStorage(lStorage);
-  }, []);
-
-  return storage;
-};
-
-/**
- * Returns a session storage used for this app.
- */
-export const useSessionStorage = ():
-  | IStorage<SessionSettingsKey>
-  | undefined => {
-  const [storage, setStorage] = React.useState<IStorage<SessionSettingsKey>>();
-
-  React.useEffect(() => {
-    setStorage(sStorage);
-  }, []);
-
-  return storage;
-};
-
 export const booleanParser = (value: unknown): boolean | undefined => {
   if (value === "true") {
     return true;
@@ -139,7 +111,7 @@ export const SessionSettings = [
 ] as const;
 export type SessionSettingsKey = (typeof SessionSettings)[number];
 
-interface SettingsOptions<T> {
+export interface StorageSettingsOptions<T> {
   defaultValue: T;
   parser: (value: string | undefined) => T | undefined;
   serializer?: (value: T) => string;
@@ -148,18 +120,28 @@ interface SettingsOptions<T> {
 const useStoredSetting = <T, TKey>(
   storage: IStorage<TKey> | undefined,
   key: TKey,
-  options: Required<SettingsOptions<T>>
+  options: StorageSettingsOptions<T>
 ): [T, (value: T) => void] => {
-  const [setting, _setSetting] = React.useState<T>(
-    options.parser(storage?.get(key)) ?? options.defaultValue
+  const defaultValue = options.defaultValue;
+  const parser = options.parser;
+  const getStoredValue = React.useCallback(
+    () => parser(storage?.get(key)) ?? defaultValue,
+    [storage, key, parser, defaultValue]
   );
 
+  const [setting, _setSetting] = React.useState<T>(getStoredValue());
+
+  React.useEffect(() => {
+    _setSetting(getStoredValue());
+  }, [getStoredValue]);
+
+  const serializer = options.serializer ?? defaultSerializer;
   const setSetting = React.useCallback(
     (newValue: T) => {
       _setSetting(newValue);
-      storage?.set(key, options.serializer(newValue));
+      storage?.set(key, serializer(newValue));
     },
-    [storage, key, options.serializer]
+    [storage, key, serializer]
   );
 
   return [setting, setSetting];
@@ -170,13 +152,9 @@ const useStoredSetting = <T, TKey>(
  */
 export const useLocaleSetting = <T>(
   key: LocalSettingsKey,
-  options: SettingsOptions<T>
+  options: StorageSettingsOptions<T>
 ) => {
-  const storage = useLocalStorage();
-  return useStoredSetting(storage, key, {
-    ...options,
-    serializer: options.serializer ?? defaultSerializer,
-  });
+  return useStoredSetting(lStorage, key, options);
 };
 
 /**
@@ -184,11 +162,7 @@ export const useLocaleSetting = <T>(
  */
 export const useSessionSetting = <T>(
   key: SessionSettingsKey,
-  options: SettingsOptions<T>
+  options: StorageSettingsOptions<T>
 ) => {
-  const storage = useSessionStorage();
-  return useStoredSetting(storage, key, {
-    ...options,
-    serializer: options.serializer ?? defaultSerializer,
-  });
+  return useStoredSetting(sStorage, key, options);
 };

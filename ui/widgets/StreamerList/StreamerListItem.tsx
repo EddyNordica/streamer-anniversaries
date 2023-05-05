@@ -27,7 +27,7 @@ export interface StreamerListItemProps {
 export const StreamerListItem = (props: StreamerListItemProps) => {
   return (
     <li
-      className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow"
+      className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
       tabIndex={0}
       // Enable this when needed. This lets tabster treat this list item as a
       // single entity, so arrow keys will jump to the next list item instead of

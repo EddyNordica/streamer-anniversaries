@@ -1,10 +1,12 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { Trans, useTranslation } from "next-i18next";
 import { Disclosure } from "@headlessui/react";
 import {
   AcademicCapIcon,
   AdjustmentsHorizontalIcon,
 } from "@heroicons/react/24/outline";
+import classNames from "classnames";
 import { Translations } from "@/data/locales";
 import {
   Anniversaries,
@@ -17,7 +19,13 @@ import { SearchBox } from "@/ui/components/SearchBox";
 import { Select, SelectItem } from "@/ui/components/Select/Select";
 import { MultiSelect } from "@/ui/components/Select/MultiSelect";
 import { Toggle } from "@/ui/components/Toggle";
-import { useLocaleSetting, booleanParser } from "@/lib/storage";
+import {
+  useLocaleSetting,
+  booleanParser,
+  StorageSettingsOptions,
+} from "@/lib/storage";
+import { Container } from "@/ui/layout/Container";
+import { ActionBarContainerContext } from "@/ui/layout/PageLayout";
 
 export interface StreamerSearchFormProps {
   anniversary: StreamerAnniversary;
@@ -32,6 +40,7 @@ export interface StreamerSearchFormProps {
 
 export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
   const { t } = useTranslation();
+  const actionBarContainerRef = React.useContext(ActionBarContainerContext);
 
   const anniversaries = React.useMemo<SelectItem<StreamerAnniversary>[]>(
     () =>
@@ -54,89 +63,99 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
   );
 
   return (
-    <div className="mt-4">
-      <Disclosure>
-        <div className="flex justify-end">
-          <Disclosure.Button className="inline-flex items-center gap-x-2 px-3.5 py-2.5 text-sm font-semibold shadow-sm rounded-md bg-white text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+    <Disclosure>
+      {actionBarContainerRef != null &&
+        ReactDOM.createPortal(
+          <Disclosure.Button className="inline-flex items-center gap-x-2 px-3.5 py-2.5 text-sm font-semibold rounded-md text-gray-900 hover:bg-gray-50">
             <AdjustmentsHorizontalIcon
               className="-ml-0.5 h-5 w-5"
               aria-hidden="true"
             />
             {t(Translations.showFilters)}
-          </Disclosure.Button>
-        </div>
-        <Disclosure.Panel className="text-gray-500">
+          </Disclosure.Button>,
+          actionBarContainerRef
+        )}
+      <Disclosure.Panel className="text-gray-500">
+        <Container>
           <div className="border-b border-gray-900/10 pb-6">
-            <div className="mt-2 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-9">
+            <div className="mt-2 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-9">
               {/* Anniversary */}
-              <div className="sm:col-span-3">
-                <div className="mt-2">
-                  <Select<StreamerAnniversary>
-                    name="anniversary"
-                    label={t(Translations.anniversary)}
-                    items={anniversaries}
-                    defaultItem={anniversaries.find(
-                      (anniversary) => anniversary.value === props.anniversary
-                    )}
-                    onSelected={props.setAnniversary}
-                  />
-                </div>
-              </div>
+              <Column>
+                <Select<StreamerAnniversary>
+                  name="anniversary"
+                  label={t(Translations.anniversary)}
+                  items={anniversaries}
+                  defaultItem={anniversaries.find(
+                    (anniversary) => anniversary.value === props.anniversary
+                  )}
+                  onSelected={props.setAnniversary}
+                />
+              </Column>
 
               {/* Regions */}
-              <div className="sm:col-span-3">
-                <div className="mt-2">
-                  <MultiSelect<StreamerRegion>
-                    name="regions"
-                    label={t(Translations.regions)}
-                    items={regions}
-                    defaultItemIds={props.regions}
-                    onSelected={props.setRegions}
-                    getButtonText={getRegionsButtonText}
-                  />
-                </div>
-              </div>
+              <Column>
+                <MultiSelect<StreamerRegion>
+                  name="regions"
+                  label={t(Translations.regions)}
+                  items={regions}
+                  defaultItemIds={props.regions}
+                  onSelected={props.setRegions}
+                  getButtonText={getRegionsButtonText}
+                />
+              </Column>
 
               {/* Show/Hide Graduated Toggle */}
-              <div className="sm:col-span-3">
-                <div className="mt-2">
-                  <label
-                    htmlFor="hideGraduated"
-                    className="inline-flex flex-wrap text-sm font-medium leading-6 text-gray-900"
-                  >
-                    <Trans
-                      i18nKey={Translations.hideGraduated}
-                      components={{
-                        i: (
-                          <AcademicCapIcon
-                            className="h-4 w-4 self-center mx-1"
-                            role="presentation"
-                          />
-                        ),
-                      }}
-                    />
-                  </label>
-                  <div className="relative mt-3">
-                    <Toggle
-                      name="hideGraduated"
-                      label={t(Translations.hideGraduatedScreenReader)}
-                      onToggled={props.setHideGraduated}
-                      defaultChecked={props.hideGraduated}
-                    />
-                  </div>
+              <Column>
+                <label
+                  htmlFor="hideGraduated"
+                  className="inline-flex flex-wrap text-sm font-medium leading-6 text-gray-900"
+                >
+                  <Trans
+                    i18nKey={Translations.hideGraduated}
+                    components={{
+                      i: (
+                        <AcademicCapIcon
+                          className="h-4 w-4 self-center mx-1"
+                          role="presentation"
+                        />
+                      ),
+                    }}
+                  />
+                </label>
+                <div className="relative mt-3">
+                  <Toggle
+                    name="hideGraduated"
+                    label={t(Translations.hideGraduatedScreenReader)}
+                    onToggled={props.setHideGraduated}
+                    defaultChecked={props.hideGraduated}
+                  />
                 </div>
-              </div>
-            </div>
+              </Column>
 
-            {/* Search Box */}
-            <SearchBox
-              label={t(Translations.searchStreamers)}
-              defaultValue={props.searchQuery}
-              onSearch={(query) => props.setSearchQuery(query)}
-            />
+              {/* Search Box */}
+              <Column className="sm:col-span-9">
+                <SearchBox
+                  label={t(Translations.searchStreamers)}
+                  defaultValue={props.searchQuery}
+                  onSearch={(query) => props.setSearchQuery(query)}
+                />
+              </Column>
+            </div>
           </div>
-        </Disclosure.Panel>
-      </Disclosure>
+        </Container>
+      </Disclosure.Panel>
+    </Disclosure>
+  );
+};
+
+interface ColumnProps {
+  className?: string;
+}
+
+const Column = (props: React.PropsWithChildren<ColumnProps>) => {
+  return (
+    <div className={classNames("sm:col-span-3", props.className)}>
+      <div className="mt-2">{props.children}</div>
     </div>
   );
 };
@@ -155,18 +174,18 @@ type SearchFormStates = [
 export const useStreamerSearchForm = (): SearchFormStates => {
   const anniversaryState = useLocaleSetting<StreamerAnniversary>(
     "filter:anniversary",
-    { defaultValue: "birthday", parser: anniversaryParser }
+    anniversaryOptions
   );
 
-  const regionsState = useLocaleSetting<StreamerRegion[]>("filter:regions", {
-    defaultValue: [],
-    parser: regionsParser,
-  });
+  const regionsState = useLocaleSetting<StreamerRegion[]>(
+    "filter:regions",
+    regionsOptions
+  );
 
-  const hideGraduatedState = useLocaleSetting<boolean>("filter:hideGraduated", {
-    defaultValue: true,
-    parser: booleanParser,
-  });
+  const hideGraduatedState = useLocaleSetting<boolean>(
+    "filter:hideGraduated",
+    hideGraduatedOptions
+  );
 
   const searchQueryState = React.useState<string>();
 
@@ -196,4 +215,19 @@ const regionsParser = (
   }
 
   return regions as StreamerRegion[];
+};
+
+const anniversaryOptions: StorageSettingsOptions<StreamerAnniversary> = {
+  defaultValue: "birthday",
+  parser: anniversaryParser,
+};
+
+const regionsOptions: StorageSettingsOptions<StreamerRegion[]> = {
+  defaultValue: [],
+  parser: regionsParser,
+};
+
+const hideGraduatedOptions: StorageSettingsOptions<boolean> = {
+  defaultValue: true,
+  parser: booleanParser,
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { DeepReadonly } from "ts-essentials";
 import { GetStaticProps } from "next/types";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation, Trans } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import { Streamers } from "@/data/streamers";
 import {
   Streamer,
@@ -23,9 +23,11 @@ import {
 import {
   StreamerListRenderer,
   getAnniversaryTitle,
-} from "@/ui/widgets/StreamerListRenderer";
+} from "@/ui/widgets/StreamerList/StreamerListRenderer";
+import { NoStreamersFound } from "@/ui/widgets/StreamerList/NoStreamersFound";
 import { removeTime } from "@/lib/date";
-import { SegmentedText } from "@/ui/components/SegmentedText";
+import { Container } from "@/ui/layout/Container";
+import { PageLayout } from "@/ui/layout/PageLayout";
 
 interface HomeProps {
   streamers: DeepReadonly<Streamer[]>;
@@ -49,64 +51,63 @@ export default function Home(props: HomeProps) {
   );
 
   return (
-    <main>
-      <h1 className="text-2xl sm:text-4xl font-semibold leading-7 text-gray-900">
-        {
-          <Trans
-            i18nKey={Translations.siteNameHeading}
-            components={{
-              span: <SegmentedText />,
-            }}
-          />
-        }
-      </h1>
+    <PageLayout pageTitle={null}>
+      <div className="flex flex-col h-full overflow-y-auto">
+        {/* Command Bar */}
+        <StreamerSearchForm
+          anniversary={anniversary}
+          setAnniversary={setAnniversary}
+          regions={regions}
+          setRegions={setRegions}
+          hideGraduated={hideGraduated}
+          setHideGraduated={setHideGraduated}
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+        />
 
-      <StreamerSearchForm
-        anniversary={anniversary}
-        setAnniversary={setAnniversary}
-        regions={regions}
-        setRegions={setRegions}
-        hideGraduated={hideGraduated}
-        setHideGraduated={setHideGraduated}
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-      />
+        {/* Content */}
+        {streamers != null && (
+          <div className="flex-1 h-full min-h-0 overflow-y-auto">
+            <div className="sr-only" aria-live="polite">
+              {t(Translations.numberOfResults, {
+                count:
+                  streamers.today.length +
+                  streamers.upcoming.length +
+                  streamers.unknown.length,
+              })}
+            </div>
 
-      {streamers != null && (
-        <>
-          <div className="sr-only" aria-live="polite">
-            {t(Translations.numberOfResults, {
-              count:
-                streamers.today.length +
-                streamers.upcoming.length +
-                streamers.unknown.length,
-            })}
+            <Container>
+              <StreamerListRenderer
+                title={t(Translations.today, {
+                  anniversary: t(getAnniversaryTitle(anniversary)),
+                })}
+                streamers={streamers.today}
+                anniversary={anniversary}
+              />
+
+              <StreamerListRenderer
+                title={t(Translations.upcoming, {
+                  anniversary: t(getAnniversaryTitle(anniversary)),
+                })}
+                streamers={streamers.upcoming}
+                anniversary={anniversary}
+              />
+
+              <StreamerListRenderer
+                title={t(Translations.unknown)}
+                streamers={streamers.unknown}
+                anniversary={anniversary}
+              />
+
+              {streamers.today.length === 0 &&
+                streamers.upcoming.length === 0 &&
+                streamers.unknown.length === 0 && <NoStreamersFound />}
+            </Container>
           </div>
-
-          <StreamerListRenderer
-            title={t(Translations.today, {
-              anniversary: t(getAnniversaryTitle(anniversary)),
-            })}
-            streamers={streamers.today}
-            anniversary={anniversary}
-          />
-
-          <StreamerListRenderer
-            title={t(Translations.upcoming, {
-              anniversary: t(getAnniversaryTitle(anniversary)),
-            })}
-            streamers={streamers.upcoming}
-            anniversary={anniversary}
-          />
-
-          <StreamerListRenderer
-            title={t(Translations.unknown)}
-            streamers={streamers.unknown}
-            anniversary={anniversary}
-          />
-        </>
-      )}
-    </main>
+        )}
+      </div>
+    </PageLayout>
   );
 }
 
