@@ -16,7 +16,7 @@ export const Header = () => {
       <RightPanel
         open={panelOpen}
         setOpen={setPanelOpen}
-        clonePanelText={Translations.closeMainMenu}
+        clonePanelText={t(Translations.closeMainMenu)}
       >
         <VerticalNav close={() => setPanelOpen(false)} />
       </RightPanel>
@@ -26,11 +26,12 @@ export const Header = () => {
           <HorizontalNav />
 
           {/* Mobile menu button */}
-          <div className="-mr-2 flex items-center sm:hidden">
+          <div className="flex items-center sm:hidden">
             <button
               type="button"
               className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               onClick={() => setPanelOpen(true)}
+              title={t(Translations.openMainMenu) ?? undefined}
             >
               <span className="sr-only">{t(Translations.openMainMenu)}</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
