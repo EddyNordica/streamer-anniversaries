@@ -27,8 +27,16 @@ export interface StreamerListItemProps {
 export const StreamerListItem = (props: StreamerListItemProps) => {
   return (
     <li
-      className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow"
+      className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
       tabIndex={0}
+      // Enable this when needed. This lets tabster treat this list item as a
+      // single entity, so arrow keys will jump to the next list item instead of
+      // going inside a focusable item inside the list item.
+      // {...getTabsterAttribute({
+      //   groupper: {
+      //     tabbability: Types.GroupperTabbabilities.LimitedTrapFocus,
+      //   },
+      // })}
     >
       <StreamerCard {...props} />
     </li>
@@ -76,10 +84,7 @@ const StreamerCard = (props: StreamerListItemProps) => {
           <>
             <dt className="sr-only">{t(Translations.anniversaryAge)}</dt>
             <dd className="text-sm text-gray-500">
-              <Trans
-                i18nKey={Translations.anniversaryAgeUnit}
-                values={{ age: props.age }}
-              />
+              {t(Translations.anniversaryAgeUnit, { age: props.age })}
             </dd>
           </>
         )}

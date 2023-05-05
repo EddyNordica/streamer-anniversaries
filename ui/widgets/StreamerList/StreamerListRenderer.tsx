@@ -1,23 +1,25 @@
+import React from "react";
 import { StreamerAnniversary } from "@/data/streamers.types";
 import { StreamerData } from "@/lib/streamers";
 import { DeepReadonly } from "ts-essentials";
 import { StreamerList } from "./StreamerList";
 import { StreamerListItem } from "./StreamerListItem";
 import { useSupportedLocale } from "@/lib/locale";
+import { Translations } from "@/data/locales";
 
-export interface StreamerListRenderer {
+export interface StreamerListRendererProps {
   title: string;
   streamers: DeepReadonly<StreamerData[]>;
   anniversary: StreamerAnniversary;
 }
 
-export const StreamerListRenderer = (props: StreamerListRenderer) => {
+export const StreamerListRenderer = (props: StreamerListRendererProps) => {
   const locale = useSupportedLocale();
 
   return (
     <>
       {props.streamers.length > 0 && locale != null && (
-        <StreamerList title={props.title}>
+        <StreamerList title={props.title} count={props.streamers.length}>
           {props.streamers.map(({ streamer, days, age }) => {
             return (
               <StreamerListItem
@@ -38,4 +40,18 @@ export const StreamerListRenderer = (props: StreamerListRenderer) => {
       )}
     </>
   );
+};
+
+/**
+ * Gets the translation key for the specified anniversary title.
+ */
+export const getAnniversaryTitle = (
+  anniversary: StreamerAnniversary
+): Translations => {
+  switch (anniversary) {
+    case "birthday":
+      return Translations.birthdayTitle;
+    case "debut":
+      return Translations.debutTitle;
+  }
 };

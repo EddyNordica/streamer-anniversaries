@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { SelectItem } from "./Select";
@@ -50,9 +51,10 @@ export const SelectContent = <T,>(props: SelectContentProps<T>) => {
               <Listbox.Option
                 key={item.id}
                 className={({ active }) =>
-                  `relative cursor-default select-none py-2 pl-3 pr-9 ${
+                  classNames(
+                    "relative cursor-default select-none py-2 pl-3 pr-9",
                     active ? "bg-indigo-600 text-white" : "text-gray-900"
-                  }`
+                  )
                 }
                 value={item}
               >
@@ -68,9 +70,10 @@ export const SelectContent = <T,>(props: SelectContentProps<T>) => {
 
                     {selected ? (
                       <span
-                        className={`absolute inset-y-0 right-0 flex items-center pr-4 ${
+                        className={classNames(
+                          "absolute inset-y-0 right-0 flex items-center pr-4",
                           active ? "text-white" : "text-indigo-600"
-                        }`}
+                        )}
                       >
                         <CheckIcon className="h-5 w-5" aria-hidden="true" />
                       </span>
