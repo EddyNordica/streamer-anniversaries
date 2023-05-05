@@ -66,12 +66,15 @@ export const StreamerSearchForm = (props: StreamerSearchFormProps) => {
     <Disclosure>
       {actionBarContainerRef != null &&
         ReactDOM.createPortal(
-          <Disclosure.Button className="inline-flex items-center gap-x-2 px-3.5 py-2.5 text-sm font-semibold rounded-md text-gray-900 hover:bg-gray-50">
+          <Disclosure.Button className="inline-flex items-center gap-x-2 p-2 text-sm font-semibold rounded-md text-gray-900 hover:bg-gray-50">
             <AdjustmentsHorizontalIcon
-              className="-ml-0.5 h-5 w-5"
-              aria-hidden="true"
+              className="h-6 w-6"
+              title={t(Translations.showFilters) ?? undefined}
             />
-            {t(Translations.showFilters)}
+            <span className="sr-only">{t(Translations.showFilters)}</span>
+            <span className="hidden sm:block">
+              {t(Translations.showFilters)}
+            </span>
           </Disclosure.Button>,
           actionBarContainerRef
         )}
